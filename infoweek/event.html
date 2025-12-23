@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>SENG Information Week</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" style="float: left; margin-right: calc(100vw - 600px);">Information Week</a>
+      <a href="event.html" class="menuText">Event Details</a>
+      <a href="registration.html" class="menuText">Register</a>
+      <a href="#contact" class="menuText">Contact Us</a>
+      <a href="javascript:void(0);" class="icon" onclick="menuOpen()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <section>
+      <h1>Event Details</h1>
+      <!-- links to change active tab content -->
+      <div class="grid-container">
+        <button class="eventLink active" id="eventDetails01" onclick="openLink(event, 'event01')">
+          <h3>Tea Mingling Sessions with Faculty</h3>
+        </button>
+        <button class="eventLink" id="eventDetails02" onclick="openLink(event, 'event02')">
+          <h3>Guided Lab Tours</h3>
+        </button>
+        <button class="eventLink" id="eventDetails03" onclick="openLink(event, 'event03')">
+          <h3>Peer Consultation</h3></button>
+        <button class="eventLink" id="eventDetails04" onclick="openLink(event, 'event04')">
+          <h3>Major Selection Briefing</h3>
+        </button>
+      </div>
+      <div class="eventContent" id="event01" style="display: block;">
+        <h2>Tea Mingling Sessions with Faculty</h2>
+        <h3>Chitchat over coffee with our Faculty members!</h3>
+        <h4 style="text-align: left; margin: 20px 0;">Still not decided on which major you are interested in? Come and join us at the Tea Mingling Session to find out more. There are faculty members from different department who are happy to share more details of their specialised majors to you. Take some snacks, sit around, have a chat with a faculty member, ask all the questions you have to get an answer to.</h4>
+        <a href="registration.html" class="menuText" style="width: 50%;"><h3 id="toReg">Click to register for the Tea Mingling Sessions!</h3></a>
+        <div class="card-container">
+          <div class="card" style="height: 350px;">
+            <h3>20 Feb (Tue)</h3>
+            <table>
+              <colgroup>
+                <col style="width: 40%;">
+                <col style="width: 60%;">
+              </colgroup>
+              <tr>
+                <th>Time</th>
+                <th>Details</th>
+              </tr>
+              <tr>
+                <td>3:00 PM &ndash; 4:00 PM</td>
+                <td> Session 1:<br><div style="text-align: left;">Prof Dan TSANG (CIVL)<br>Prof Wilfred NG (CPEG)<br>Prof Levent YOBAS (CPEG)<br>Prof Hongyu YU (MAE)<br>Prof Anthony LEUNG (CIVL)</div></td>
+              </tr>
+              <tr>
+                <td>4:30 PM &ndash; 5:30 PM</td>
+                <td> Session 2:<br><div style="text-align: left;">Prof Robin MA (MAE)<br>Prof Sisi JIAN (CIVL)<br>Prof Xin WANG (IEDA)<br>Prof Xiaomeng LI (ECE)<br>Prof Changying XIANG (ISD)</div></td>
+              </tr>
+            </table>
+          </div>
+          <div class="card" style="height: 350px;">
+            <h3>21 Feb (Wed)</h3>
+            </table>
+            <table>
+              <colgroup>
+                <col style="width: 40%;">
+                <col style="width: 60%;">
+              </colgroup>
+              <tr>
+                <th>Time</th>
+                <th>Details</th>
+              </tr>
+              <tr>
+                <td>2:00 PM &ndash; 3:00 PM</td>
+                <td> Session 3:<br><div style="text-align: left;">Prof Sherry CHEN (MAE)<br>Prof D. Y. YEUNG (CSE)<br>Prof Cindy LI (CSE)<br>Prof Albert WONG (ECE)<br>Prof Bonnie ZHU (CBE)</div></td>
+              </tr>
+              <tr>
+                <td>3:30 PM &ndash; 4:30 PM</td>
+                <td> Session 4:<br><div style="text-align: left;">Prof Yi CHEN (IEDA)<br>Prof Larry LI (MAE)<br>Prof Richard LAKERVELD (CBE)<br>Prof Chi Ming CHAN (CBE)</div></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="eventContent" id="event02" style="display: none;">
+        <h2>Guided Lab Tours</h2>
+        <h3>Wanna know more about what the major programs do? Join the lab tours!</h3>
+        <h4 style="text-align: left; margin: 20px 0;">The Guided Laboratory Tour is another highlight in the Experience the major's series. Through this event, students can gain an in-depth understanding of the technologies, tools, and techniques used in different majors. These tours provide students with the opportunity to explore the labs, engage with faculty members and researchers, and learn more about the research related to the different majors.</h4> 
+        <a href="registration.html" class="menuText" style="width: 50%;"><h3 id="toReg">Click to register for Guided Lab Tours!</h3></a>
+        <div style="height: 40px;"></div>
+        <h2><strong>Guided Tour Meet-up Point: Outside LT-K</strong></h2>
+        <div class="card-container">
+          <div class="card" style="height: 250px;">
+            <h3>20 Feb (Tue)</h3>
+            <table>
+              <colgroup>
+                <col style="width: 40%;">
+                <col style="width: 60%;">
+              </colgroup>
+              <tr>
+                <th>Time</th>
+                <th>Major Departments</th>
+              </tr>
+              <tr>
+                <td>11:00 AM &ndash; 11:30 AM</td>
+                <td> Session 1: MAE/CSE/CIVL</td>
+              </tr>
+              <tr>
+                <td>11:30 AM &ndash; 12:00 Noon</td>
+                <td> Session 2: CIVL</td>
+              </tr>
+              <tr>
+                <td>12:00 Noon &ndash; 12:30 PM</td>
+                <td> Session 3: ECE</td>
+              </tr>
+            </table>
+          </div>
+          <div class="card" style="height: 250px;">
+            <h3>21 Feb (Wed)</h3>
+            <table>
+              <colgroup>
+                <col style="width: 40%;">
+                <col style="width: 60%;">
+              </colgroup>
+              <tr>
+                <th>Time</th>
+                <th>Major Departments</th>
+              </tr>
+              <tr>
+                <td>10:00 AM &ndash; 10:30 AM</td>
+                <td> Session 1: MAE</td>
+              </tr>
+              <tr>
+                <td>10:30 AM &ndash; 11:00 AM</td>
+                <td> Session 2: ISD</td>
+              </tr>
+              <tr>
+                <td>11:30 AM &ndash; 12:00 Noon</td>
+                <td> Session 3: ISD</td>
+              </tr>
+              <tr>
+                <td>12:00 Noon &ndash; 12:30 PM</td>
+                <td> Session 4: IEDA/CBE/SUSEE</td>
+              </tr>
+            </table>
+          </div>
+          <div class="card" style="height: 250px;">
+            <h3>22 Feb (Thu)</h3>
+            <table>
+              <colgroup>
+                <col style="width: 40%;">
+                <col style="width: 60%;">
+              </colgroup>
+              <tr>
+                <th>Time</th>
+                <th>Details</th>
+              </tr>
+              <tr>
+                <td>11:00 AM &ndash; 11:30 AM</td>
+                <td> Session 1: CIVL</td>
+              </tr>
+              <tr>
+                <td>11:30 AM &ndash; 12:00 Noon</td>
+                <td> Session 2: CIVL</td>
+              </tr>
+              <tr>
+                <td>12:00 Noon &ndash; 12:30 PM</td>
+                <td> Session 3: CBE/SUSEE</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h4 style="text-align: left;"><sup>*</sup>Due to the venue's capacity, registration is required for all the Laboratory tours.</h4>
+      </div>
+      <div class="eventContent" id="event03" style="display: none;">
+        <h2>Peer Consultation</h2>
+        <h3>Ask fellow peer mentors about their experience!</h3>
+        <h4 style="text-align: left; margin: 20px 0;">Peer Consultation is a part of the Engineering InfoWeek event where students can connect with peer mentors (or other senior students) and have conversations. Students can ask questions about different engineering majors, learn about the student experience, and receive guidance and support from their peers.</h4>
+        <h4 style="text-align: left; margin: 20px 0;">Current students will set booths for different Major Programs at the Engineering Commons. Feel free to ask any questions you may have about your ideal major!</h4>
+        <div class="card-container">
+          <div class="card" style="height: 200px; max-width: 40%;">
+            <h3>22 Feb (Thu)</h3>
+            <table>
+              <tr>
+                <th>Time</th>
+                <th>Venue</th>
+              </tr>
+              <tr>
+                <td>1:00 PM &ndash; 5:00 PM</td>
+                <td>Communal area outside LT-K and LT-J</td>
+              </tr>
+            </table>
+          </div>
+          <div class="card" style="height: 200px; max-width: 50%;">
+            <h3>23 Feb (Fri)</h3>
+            <table>
+              <tr>
+                <th>Time</th>
+                <th>Venue</th>
+              </tr>
+              <tr>
+                <td>10:00 AM &ndash; 5:00 PM</td>
+                <td>Communal area outside LT-K and LT-J</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <img style="max-width: 600px; width: 85%; border-radius: 20px; margin: 60px auto; display: block;" src="img/pmchat.jpg" alt="Picture of peer mentors consulting student">
+      </div>
+      <div class="eventContent" id="event04" style="display: none;">
+        <h2>Major Selection Briefing</h2>
+        <h3>Everything you need to know about the Major Selection Exercise!</h3>
+        <h4 style="text-align: left; margin: 20px 0;">The Major Selection Briefing contains all the information you need to know about how to choose your major. We will go through the entire timeline and provide some key reminders of the Major Selection Exercise that you will have to go through towards the end of the semester.</h4>
+        <div class="card-container">
+          <div class="card" style="height: 200px; max-width: 40%;">
+            <h3>19 Feb (Mon)</h3>
+            <h4><strong>Major Selection Briefing</strong></h4>
+            <table>
+              <colgroup>
+                <col style="width: 40%;">
+                <col style="width: 60%;">
+              </colgroup>
+              <tr>
+                <th>Time</th>
+                <th>Details</th>
+              </tr>
+              <tr>
+                <td>11:00 AM &ndash; 12:30 PM</td>
+                <td>Session #1 at LT-B</td>
+              </tr>
+              <tr>
+                <td>3:00 PM &ndash; 4:30 PM</td>
+                <td>Session #2 at LT-B</td>
+              </tr>
+            </table>
+          </div>
+          <div class="card" style="height: 200px; max-width: 40%;">
+            <h3>21 Feb (Wed)</h3>
+            <h4><strong>Major Selection Briefing</strong></h4>
+            <table>
+              <colgroup>
+                <col style="width: 40%;">
+                <col style="width: 60%;">
+              </colgroup>
+              <tr>
+                <th>Time</th>
+                <th>Details</th>
+              </tr>
+              <tr>
+                <td>6:15 PM &ndash; 7:45 PM</td>
+                <td>Session #3 at LT-L</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1>Event Schedule</h1>
+      <a href="registration.html" class="menuText"><h3 id="toReg">Click to register for Guided Lab Tours!</h3></a>
+      <div class="card-container">
+        <div class="card">
+          <h3>19 Feb (Mon)</h3>
+          <h4><strong>Major Selection Briefing</strong></h4>
+          <table>
+            <colgroup>
+              <col style="width: 40%;">
+              <col style="width: 60%;">
+            </colgroup>
+            <tr>
+              <th>Time</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td>11:00 AM &ndash; 12:30 PM</td>
+              <td>Session #1 at LT-B</td>
+            </tr>
+            <tr>
+              <td>3:00 PM &ndash; 4:30 PM</td>
+              <td>Session #2 at LT-B</td>
+            </tr>
+          </table>
+        </div>
+        <div class="card">
+          <h3>20 Feb (Tue)</h3>
+          <h4><strong>Guided Lab Tours</strong></h4>
+          <table>
+            <colgroup>
+              <col style="width: 40%;">
+              <col style="width: 60%;">
+            </colgroup>
+            <tr>
+              <th>Time</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td>11:00 AM &ndash; 11:30 AM</td>
+              <td> Session 1: MAE/CSE/CIVL</td>
+            </tr>
+            <tr>
+              <td>11:30 AM &ndash; 12:00 Noon</td>
+              <td> Session 2: CIVL</td>
+            </tr>
+            <tr>
+              <td>12:00 Noon &ndash; 12:30 PM</td>
+              <td> Session 3: ECE</td>
+            </tr>
+          </table>
+          <h4><strong>Tea Mingling Sessions with Faculty</strong></h4>
+          <h5>Tsang Shiu Tim Art Hall</h5>
+          <table>
+            <colgroup>
+              <col style="width: 40%;">
+              <col style="width: 60%;">
+            </colgroup>
+            <tr>
+              <th>Time</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td>3:00 PM &ndash; 4:00 PM</td>
+              <td> Session 1:<br><div style="text-align: left;">Prof Dan TSANG (CIVL)<br>Prof Wilfred NG (CPEG)<br>Prof Levent YOBAS (CPEG)<br>Prof Hongyu YU (MAE)<br>Prof Anthony LEUNG (CIVL)</div></td>
+            </tr>
+            <tr>
+              <td>4:30 PM &ndash; 5:30 PM</td>
+              <td> Session 2:<br><div style="text-align: left;">Prof Robin MA (MAE)<br>Prof Sisi JIAN (CIVL)<br>Prof Xin WANG (IEDA)<br>Prof Xiaomeng LI (ECE)<br>Prof Changying XIANG (ISD)</div></td>
+            </tr>
+          </table>
+        </div>
+        <div class="card">
+          <h3>21 Feb (Wed)</h3>
+          <h4><strong>Guided Lab Tours</strong></h4>
+          <table>
+            <colgroup>
+              <col style="width: 40%;">
+              <col style="width: 60%;">
+            </colgroup>
+            <tr>
+              <th>Time</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td>10:00 AM &ndash; 10:30 AM</td>
+              <td> Session 1: MAE</td>
+            </tr>
+            <tr>
+              <td>10:30 AM &ndash; 11:00 AM</td>
+              <td> Session 2: ISD</td>
+            </tr>
+            <tr>
+              <td>11:30 AM &ndash; 12:00 Noon</td>
+              <td> Session 3: ISD</td>
+            </tr>
+            <tr>
+              <td>12:00 Noon &ndash; 12:30 PM</td>
+              <td> Session 4: IEDA/CBE/SUSEE</td>
+            </tr>
+          </table>
+          <h4><strong>Tea Mingling Sessions with Faculty</strong></h4>
+          <h5>Tsang Shiu Tim Art Hall</h5>
+          <table>
+            <colgroup>
+              <col style="width: 40%;">
+              <col style="width: 60%;">
+            </colgroup>
+            <tr>
+              <th>Time</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td>2:00 PM &ndash; 3:00 PM</td>
+              <td> Session 3:<br><div style="text-align: left;">Prof Sherry CHEN (MAE)<br>Prof D. Y. YEUNG (CSE)<br>Prof Cindy LI (CSE)<br>Prof Albert WONG (ECE)<br>Prof Bonnie ZHU (CBE)</div></td>
+            </tr>
+            <tr>
+              <td>3:30 PM &ndash; 4:30 PM</td>
+              <td> Session 4:<br><div style="text-align: left;">Prof Yi CHEN (IEDA)<br>Prof Larry LI (MAE)<br>Prof Richard LAKERVELD (CBE)<br>Prof Chi Ming CHAN (CBE)</div></td>
+            </tr>
+          </table>
+          <h4><strong>Major Selection Briefing</strong></h4>
+          <table>
+            <tr>
+              <th>Time</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td>6:15 PM &ndash; 7:45 PM</td>
+              <td>Session #3 at LT-L</td>
+            </tr>
+          </table>
+        </div>
+        <div class="card">
+          <h3>22 Feb (Thu)</h3>
+          <h4><strong>Guided Lab Tours</strong></h4>
+          <table>
+            <colgroup>
+              <col style="width: 40%;">
+              <col style="width: 60%;">
+            </colgroup>
+            <tr>
+              <th>Time</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td>11:00 AM &ndash; 11:30 AM</td>
+              <td> Session 1: CIVL</td>
+            </tr>
+            <tr>
+              <td>11:30 AM &ndash; 12:00 Noon</td>
+              <td> Session 2: CIVL</td>
+            </tr>
+            <tr>
+              <td>12:00 Noon &ndash; 12:30 PM</td>
+              <td> Session 3: CBE/SUSEE</td>
+            </tr>
+          </table>
+          <h4><strong>Peer Consultation</strong></h4>
+          <h5>Communal Area outside LT-K and LT-J</h5>
+          <table>
+            <colgroup>
+              <col style="width: 40%;">
+              <col style="width: 60%;">
+            </colgroup>
+            <tr>
+              <th>Time</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td>1:00 PM &ndash; 5:00 PM</td>
+              <td>
+                <ul style="padding: 30px; text-align: left;">
+                  <li>Student Booth for Major Consultation</li>
+                  <li>Claw Machine and Souvenir pick-up</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="card">
+          <h3>23 Feb (Fri)</h3>
+          <h4><strong>Peer Consultation</strong></h4>
+          <h5>Communal Area outside LT-K and LT-J</h5>
+          <table>
+            <colgroup>
+              <col style="width: 40%;">
+              <col style="width: 60%;">
+            </colgroup>
+            <tr>
+              <th>Time</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td>10:00 AM &ndash; 5:00 PM</td>
+              <td>
+                <ul style="padding: 30px; text-align: left;">
+                  <li>Student Booth for Major Consultation</li>
+                  <li>Claw Machine and Souvenir pick-up</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1>Contact Us</h1>
+      <h3 style="margin: 20px;">For enquiries, please contact our academic advisors at Room 6580 (via Lift 27-28) or email us at <a href="mailto:sengadvisor@ust.hk?subject=Information Week Enquiries: ">sengadvisor@ust.hk</a>.</h3>
+    </section>
+  </body>
+</html>
