@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome To SENG - Explore the Curriculum</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <link rel="stylesheet" type="text/css" href="css/Footer-with-logo-sticky.css">
+    <style>
+i {
+  position: absolute;
+  background: url(img/expandable.png) 0px -24px no-repeat;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin: 9px 2px 20px 0px;
+  right: 0;
+}
+    .active i {
+      background: url(img/expandable.png) 0px 0px no-repeat;
+    }
+    .links-ul {
+      font-size: 2vh;
+    }
+    td {
+      text-align:center;
+      vertical-align:middle !important;
+      font-size: 1.8vh;
+    }
+    .course-table-head {
+      font-weight: 700;
+      text-align: left;
+    }
+    p {
+
+      font-size: 1.85vh;
+
+    }
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top index-nav" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand hidden-xs" href="index.html"><img src="img/seng_logo_l.png" class="shadowed"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right index-nav-list">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li>
+              <a class="before-event" href="advisingSession.html">Orientation Talk</a>
+              <a class="after-event hidden" href="advisingSession.html">Orientation Talk Recording</a>
+            </li>
+            <li><a href="houses.html">SENG Houses</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <a name="top"></a>
+    <div class="content">
+      <div class="container" style="padding-top: 60px; padding-bottom: 10px">
+        <div class="row" style="padding: 10px;">            
+          <h1>Explore the Curriculum</h1>
+          <video src="video/Reg_Course_Procedure.mp4" width="100%" id="step-3-video" poster="video/Reg_Course_Procedure_thumb.jpeg" controls>
+            video not supported
+          </video>
+          <p>If the video is running slow, please click <a onclick="javascript: step3Low();" role="button" style="text-decoration:underline;">here</a> for 480p version.</p>
+          <p class="bg-info" style="padding:10px; border-radius: 5px;">The Course Registration video contains important messages regarding to the whole course registration procedure. Please watch the entire video before moving on to the next step. </p>
+          <p>The following required courses have already been pre-enrolled for you, totalling 7 or 8 credits:</p>
+          <ul style="font-size:1.8vh">
+            <li>HMAW1905B &ndash; Behaviour Foundations of University Education: Habits, Mindset and Wellness <small><span style="color:#777777;">[ 1 credit in Fall 2024 ]</span></small></li>
+            <li>English Communication (E-Comm)<small><span style="color:#777777;">[ 3 credits ]</span></small></li>
+            <li>MATH1012 / MATH1013 &ndash; Calculus IA / Calculus IB <small><span style="color:#777777;">[ 4 or 3 credits ]</span></small></li>
+          </ul>
+          <p>Please note the following additional details:</p>
+          <ul style="font-size:1.8vh">
+            <li>Credit transfers may be applicable.</li>
+            <li>HMAW1905B is a year-long course for year one students, with a total of 3 credits. You will take 1 credit in Fall 2024 and 2 credits in Spring 2025.</li>
+            <li>All new students will be pre-enrolled in an E-Comm course (LANG1402 / LANG1407) in Fall 2024-25 based on your submitted public examination result.</li>
+          </ul>
+          <p>You can refer to the <a href="https://prog-crs.hkust.edu.hk/ugcourse">Undergraduate Course Catalog</a> for more details about the courses listed below.</p>
+          <!-- REMOVE TABLE
+          <div class="faq-toggle">
+            <div class="faq-toggle-title" style="border:hidden; background-color:#d9edf7; border-radius: 5px;">
+              <i></i>
+              <h4><span class="faq-title-name" style="padding-left:10px; font-weight:700;">Course Recommended&nbsp;&nbsp;&nbsp;<span style="display:inline-block; word-break:keep-all;;"><small></small></span></span></h4>
+            </div>
+            <div class="activate-toggle-inner" style="overflow-x: auto; overflow-y: hidden;">
+              <p>The following courses are recommended by different Departments/Programs. You may choose accordingly to your preference.</p>
+              <table class="table table-striped">
+                <tr class="info">
+                  <td width="40%" class="course-table-head">Chemical and Biological Engineering (CBE)</td>
+                  <td width="20%">CENG1000 / CENG1700</td>
+                  <td width="20%">COMP1021</td>
+                  <td width="20%">PHYS1101 / PHYS1112 / CHEM1008/ CHEM1012 / LIFS1901</td>
+                </tr>
+                <tr>
+                  <td class="course-table-head">Civil and Environmental Engineering (CIVL)</td>
+                  <td>CIVL1100</td>
+                  <td>COMP1021</td>
+                  <td>PHYS1101 / PHYS1112 / CHEM1008 / CHEM1012</td>
+                </tr>
+                <tr class="info">
+                  <td class="course-table-head">Computer Science and Engineering (CSE)</td>
+                  <td></td>
+                  <td>COMP1021</td>
+                  <td>PHYS1101 / PHYS1112 / CHEM1008 / CHEM1012 / LIFS1901</td>
+                </tr>
+                <tr>
+                  <td class="course-table-head">Computer Engineering (CPEG)</td>
+                  <td>ELEC1100</td>
+                  <td>COMP1021</td>
+                  <td>PHYS1101 / PHYS1112</td>
+                </tr>
+                <tr class="info">
+                  <td class="course-table-head">Electronic and Computer Engineering (ELEC)</td>
+                  <td>ELEC1100 / ELEC1200</td>
+                  <td>COMP1021</td>
+                  <td>PHYS1101 / PHYS1112</td>
+                </tr>
+                <tr>
+                  <td class="course-table-head">Industrial Engineering and Decision Analytics (IEDA)</td>
+                  <td>IEDA2010</td>
+                  <td>COMP1021</td>
+                  <td>PHYS1101 / PHYS1112 / CHEM1008 / CHEM1012</td>
+                </tr>
+                <tr class="info">
+                  <td class="course-table-head">Mechanical and Aerospace Engineering (MAE)</td>
+                  <td>MECH1902 / MECH1907</td>
+                  <td>COMP1021</td>
+                  <td>PHYS1101 / PHYS1112 / CHEM1008 / CHEM1012 / LIFS1901</td>
+                </tr>
+                <tr>
+                  <td class="course-table-head">Sustainable Energy Engineering (SUSEE)</td>
+                  <td>CENG1700 / MECH1902</td>
+                  <td>COMP1021</td>
+                  <td>PHYS1101 / PHYS1112 / CHEM1008 / CHEM1012</td>           
+                </tr>
+                <tr class="active">
+                  <td class="course-table-head">Multiple Disciplines</td>
+                  <td>Engineering Introduction Courses / ENGG1100</td>
+                  <td>COMP1021</td>
+                  <td>PHYS1101 / PHYS1112 / CHEM1008 / CHEM1012 / LIFS1901</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          -->
+          <p></p>
+          <p>For more information about class schedule, you can refer to the <a href="https://w5.ab.ust.hk/wcq/cgi-bin/">HKUST Class Schedule &amp; Quota</a>.</p>
+          <p>See the <a href="faq.html">FAQ</a> for further course enrollment details.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer id="myFooter">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-md-3" style="padding: 0px;">
+            <h5 class="visible-sm">School of Engineering</h5>
+            <h5 class="hidden-sm">School of Engineering</h5>
+            <ul class="footer-ul">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="activate.html">Pre-enrollment</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3" style="padding: 0px;">
+            <h5>Advising</h5>
+            <ul class="footer-ul">
+              <li>
+                <a class="before-event" href="advisingSession.html">Orientation Talk</a>
+                <a class="after-event hidden" href="advisingSession.html">Orientation Talk Recording</a>
+              </li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="houses.html">Peer Mentoring Program</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-2 col-md-3" style="padding: 0px;">
+            <h5>Information</h5>
+            <ul class="footer-ul">
+              <li><a href="file/guidebook_2024-25.pdf" target="_blank">First Year Guide</a></li>
+              <li><a href="explore.html">Explore the Curriculum</a></li>
+              <li><a href="important_date.html">Important Dates</a></li>
+              <li><a href="orientation.html">Orientation Activities</a></li>
+              <li><a href="links.html">Useful Links</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3" style="padding: 0px;">
+            <h5>Enquiry</h5>
+            <ul class="footer-ul hidden-xs">
+              <li><span style="display:inline-block; width:3.5em">Email: </span>
+                <span style="display:inline-block; width:10em">
+                  <a href="mailto:sengadvisor@ust.hk">sengadvisor@ust.hk</a></span>
+              </li>
+              <li><span style="display:inline-block; width:3.5em">Tel:</span>
+                <span style="display:inline-block; width:10em;word-break:keep-all">(852)&nbsp;2358&nbsp;5934</span>
+              </li>
+              <li><span style="display:inline-block; width:3.5em"></span>
+                <span style="display:inline-block; width:10em;word-break:keep-all">(852)&nbsp;2358&nbsp;5935</span>
+              </li>
+              <li><span style="display:inline-block; width:3.5em"></span>
+                <span style="display:inline-block; width:10em;word-break:keep-all">(852)&nbsp;2358&nbsp;8224</span>
+              </li>
+            </ul>
+            <ul class="footer-ul visible-xs">
+              <li><span style="display:inline-block; width:3.5em; text-align:right">Email:&nbsp;&nbsp;</span>
+                <span style="display:inline-block; width:10em; text-align:left;"><a href="mailto:sengadvisor@ust.hk">sengadvisor@ust.hk</a></span>
+              </li>
+              <li><span style="display:inline-block; width:3.5em; text-align:right">Tel:&nbsp;&nbsp;</span>
+                <span style="display:inline-block; width:10em;word-break:keep-all; text-align:left;">(852)&nbsp;2358&nbsp;5934</span>
+              </li>
+              <li><span style="display:inline-block; width:3.5em; text-align:right"></span>
+                <span style="display:inline-block; width:10em;word-break:keep-all; text-align:left;">(852)&nbsp;2358&nbsp;5935</span>
+              </li>
+              <li><span style="display:inline-block; width:3.5em; text-align:right"></span>
+                <span style="display:inline-block; width:10em;word-break:keep-all; text-align:left;">(852)&nbsp;2358&nbsp;8224</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="second-bar">
+        <div class="container">
+          <h6> Copyright &copy; 2024 School of Engineering, HKUST All Rights Reserved</h6>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/js_activate.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+      // update dates
+      if (Date.now() - Date.parse("Aug 11 2023 00:00:00 GMT+0800") > 0) {
+        $(".before-event").addClass("hidden");
+        $(".after-event").removeClass("hidden");
+      }
+      // show list
+      setTimeout(() => {
+        $(".faq-title-name").click();
+      }, 0);
+    </script>
+    <script type="text/javascript">
+
+      if( jQuery(".faq-toggle .faq-toggle-title").hasClass('active') ){
+        jQuery(".faq-toggle .faq-toggle-title.active").closest('.faq-toggle').find('.activate-toggle-inner').show();
+      }
+      jQuery(".faq-toggle .faq-toggle-title").click(function(){
+        if( jQuery(this).hasClass('active') ){
+          jQuery(this).removeClass("active").closest('.faq-toggle').find('.activate-toggle-inner').slideUp(200);
+        }
+        else{ jQuery(this).addClass("active").closest('.faq-toggle').find('.activate-toggle-inner').slideDown(200);
+        }
+      });
+
+      $(".faq-toggle .faq-toggle-title").hover(function () {
+        $('.faq-toggle-title').css("background-color", "#E6F4FF");
+      }, function () {
+        $('.faq-toggle-title').css("background-color", "#d9edf7");
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,495 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Welcome To SENG - Index</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<!-- Bootstrap -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/css.css">
+		<link rel="stylesheet" type="text/css" href="css/Footer-with-logo.css">
+
+    <style>
+      /* diable scroll on body when overlay popup is open */
+      body.disable-scroll {
+        overflow: hidden;
+      }
+      /* Overlay styles */
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000; /* Ensure it appears above other content */
+      }
+
+      /* Content within the overlay */
+      .overlay-content {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: left;
+        max-width: 1000px;
+        overflow-y: auto;
+        max-height: 90%; /* Ensure it is scrollable if content is too long */
+      }
+
+      /* Table styles */
+      .overlay-content table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      .overlay-content table, th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      .overlay-content th {
+        background-color: #f2f2f2;
+        text-align: left;
+      }
+
+      /* Optional close button styling */
+      .overlay-content button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .overlay-content button:hover {
+        background: #0056b3;
+      }
+    </style>
+
+    <script>
+      function closeOverlay() {
+        document.getElementById('overlay').style.display = 'none';
+      }
+    </script>
+
+    <script>
+      /* disable scoll when overlay is open */
+      document.addEventListener('DOMContentLoaded', () => {
+        const overlay = document.getElementById('overlay');
+        const closeOverlay = document.getElementById('closeOverlay');
+
+        // Disable body scroll when popup is open
+        document.body.classList.add('disable-scroll');
+
+        closeOverlay.addEventListener('click', () => {
+          // Enable body scroll when popup is closed
+          document.body.classList.remove('disable-scroll');
+        });
+      });
+    </script>
+
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top index-nav" role="navigation" style="z-index:999;">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand hidden-xs" href="index.html"><img src="img/seng_logo_l.png" class="shadowed"></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right index-nav-list">
+						<li class="active"><a href="index.html">Home</a></li>
+            <!-- HIDE UNTIL NEW UPDATE -->
+						<li>
+							<a class="before-event" href="advisingSession.html">Orientation Talk</a>
+							<a class="after-event hidden" href="advisingSession.html">Orientation Talk Recording</a>
+						</li>
+						<li><a href="houses.html">SENG Houses</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<a name="top"></a>
+		<div class="index-canvas parallax">
+			<div class="container-fluid">
+			<h1>Welcome to SENG</h1>
+
+      <!-- Coming Soon Page
+			<h2>Online registration information coming soon!</h2>
+      -->
+
+			<h4><span style="font-size: large;">Completing online registration is the first step in joining the SENG community!</span></h4>
+			<hr>
+			<h5><span style="font-size: large;">The following steps will be included:</span></h5>
+
+			<h6><span style="display:inline-block; text-align:left;font-size: large;">&bull; Confirm ITSC account<br>&bull; Watch an introductory video<br>&bull; Attend Orientation Talk<br>&bull; Pre-enroll courses in e-Advising</span></h6>
+      <p><br><a class="btn btn-primary btn-lg index-canvas-btn" href="activate.html" role="button"><span
+			class="glyphicon glyphicon-play-circle" aria-hidden="true"
+			style="text-height:16px; top:2px"></span> Get Started</a></p>
+
+			<!-- Info Week
+			<h1>Welcome to SENG</h1>
+			<h4><span style="font-size: large;">Join our Information Week to learn more about different majors!</span></h4>
+			<hr>
+			<h5><span style="font-size: large;">Participate in the following activities:</span></h5>
+
+			<h6><span style="display:inline-block; text-align:left;font-size: large;">&bull; Major Selection Briefing<br>&bull; Induction Talk <br>&bull; Guided Lab Tours<br>&bull; Sharing sessions by current students, faculty members, and alumni<br>&bull; Join us for popcorn, candies, and clawing machines!</span></h6>
+			<p><br><a class="btn btn-primary btn-lg index-canvas-btn" href="infoweek/index.html" role="button"><span class="glyphicon glyphicon-play-circle" aria-hidden="true" style="text-height:16px; top:2px"></span> Visit InfoWeek Website!</a></p>
+			-->
+			<br>
+      <h4 class="before-event"><span style="font-size: large;">The Orientation Talk will be held on <strong>8-9 Aug 2024</strong>:</span></h4>
+      <h4 class="before-event"><span style="font-size: large;">8 Aug 2024: <strong>11:00AM (Session 1) or 2:00PM (Session 2)</strong></span></h4>
+			<h4 class="before-event"><span style="font-size: large;">9 Aug 2024: <strong>11:00AM (Session 3)</strong></span></h4>
+			<h4 class="before-event"><span style="font-size: large;">Venue: <strong>Lecture Theatre J</strong></span></h4>
+			<span class="btn-nav index-btn-down">
+				<a href="#index-down"><span></span></a>
+			</span>
+			</div>
+		</div>
+
+		<div class="index-tool" style="padding: 50px 0px 50px 0px;" id="index-down">
+			<div class="container index-tool-content">
+				<div class="row">
+					<div class="col-md-4">
+						<a href="explore.html"><img class="img" src="img/explore.png" alt="contact-us-icon" style="height: 100px; margin:23px"></a>
+						<h2>Explore the Curriculum</h2>
+						<p>Plan the courses you want to enroll.</p>
+						<br><br>
+						<p><a class="btn btn-default" href="explore.html" role="button">Explore the Curriculum &raquo;</a>
+						</p>
+					</div>
+					<div class="col-md-4">
+						<a href="faq.html"><img class="img" src="img/faq_index_icon.png" alt="faq-icon" style="height: 90px; margin:28px"></a>
+						<h2>FAQ</h2>
+						<p>We have prepared some frequently asked questions.</p><br />
+						<p><a class="btn btn-default" href="faq.html" role="button">FAQ &raquo;</a></p>
+					</div>
+					<div class="col-md-4">
+						<a href="advisingSession.html"><img class="img" src="img/livestream_index_icon.png" alt="livestream_icon" style="height: 90px; margin:28px"></a>
+						<h2>Orientation Talk</h2>
+						<p>Advice from E&#178I Director Prof. Henry LAM to help you prepare your university life.</p><br />
+						<p><a class="btn btn-default" href="advisingSession.html" role="button">Orientation Talk &raquo;</a></p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4" style="float: none; margin: 0 auto;">
+						<a href="file/guidebook_2024-25.pdf" target="_blank"><img class="img" src="img/booklet.png" alt="booklet-icon" style="height: 90px; margin:28px"></a>
+						<h2>First Year Guidebook</h2>
+						<p>Navigate your university life with a comprehensive guidebook.</p><br />
+						<p><a class="btn btn-default" href="file/guidebook_2024-25.pdf" role="button" target="_blank">First Year Guide Book &raquo;</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="index-logo-box" style="padding: 50px 0px 50px 0px;">
+			<div class="container">
+				<div class="row">
+					<a href="https://hkust.edu.hk/" target="_blank">
+						<div class="col-xs-12 col-sm-4 index-logo">
+							<img style="max-height: 130px; width: auto;" src="img/hkust_index_logo.png" alt="hkust_logo" />
+						</div>
+					</a>
+					<a href="https://www.seng.ust.hk/web/eng" target="_blank">
+						<div class="col-xs-12 col-sm-4 index-logo">
+							<img style="max-height: 130px; width: auto;" src="img/seng_index_logo.png" alt="seng_logo" />
+						</div>
+					</a>
+					<a href="http://e2i.ust.hk/" target="_blank">
+						<div class="col-xs-12 col-sm-4 index-logo">
+							<img style="max-height: 110px; width: auto; padding-top:10px;" src="img/e2i_logo_new.png" alt="e2i_logo" />
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden">
+		<a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=sengreg.ust.hk/index.html&digit=style/plain/10/&reloads=0" alt="" title="" border="0"></a><br /><a href="http://www.fabbly.com" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;">index.html</a>
+		</div>
+
+    <footer id="myFooter">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-md-3" style="padding: 0px;">
+            <h5 class="visible-sm">School of Engineering</h5>
+            <h5 class="hidden-sm">School of Engineering</h5>
+            <ul class="footer-ul">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="activate.html">Pre-enrollment</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3" style="padding: 0px;">
+            <h5>Advising</h5>
+            <ul class="footer-ul">
+              <li>
+                <a class="before-event" href="advisingSession.html">Orientation Talk</a>
+                <a class="after-event hidden" href="advisingSession.html">Orientation Talk Recording</a>
+              </li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="houses.html">Peer Mentoring Program</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-2 col-md-3" style="padding: 0px;">
+            <h5>Information</h5>
+            <ul class="footer-ul">
+              <li><a href="file/guidebook_2024-25.pdf" target="_blank">First Year Guide</a></li>
+              <li><a href="explore.html">Explore the Curriculum</a></li>
+              <li><a href="important_date.html">Important Dates</a></li>
+              <li><a href="orientation.html">Orientation Activities</a></li>
+              <li><a href="links.html">Useful Links</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3" style="padding: 0px;">
+            <h5>Enquiry</h5>
+            <ul class="footer-ul hidden-xs">
+              <li><span style="display:inline-block; width:3.5em">Email: </span>
+                <span style="display:inline-block; width:10em">
+                  <a href="mailto:sengadvisor@ust.hk">sengadvisor@ust.hk</a></span>
+              </li>
+              <li><span style="display:inline-block; width:3.5em">Tel:</span>
+                <span style="display:inline-block; width:10em;word-break:keep-all">(852)&nbsp;2358&nbsp;5934</span>
+              </li>
+              <li><span style="display:inline-block; width:3.5em"></span>
+                <span style="display:inline-block; width:10em;word-break:keep-all">(852)&nbsp;2358&nbsp;5935</span>
+              </li>
+              <li><span style="display:inline-block; width:3.5em"></span>
+                <span style="display:inline-block; width:10em;word-break:keep-all">(852)&nbsp;2358&nbsp;8224</span>
+              </li>
+            </ul>
+            <ul class="footer-ul visible-xs">
+              <li><span style="display:inline-block; width:3.5em; text-align:right">Email:&nbsp;&nbsp;</span>
+                <span style="display:inline-block; width:10em; text-align:left;"><a href="mailto:sengadvisor@ust.hk">sengadvisor@ust.hk</a></span>
+              </li>
+              <li><span style="display:inline-block; width:3.5em; text-align:right">Tel:&nbsp;&nbsp;</span>
+                <span style="display:inline-block; width:10em;word-break:keep-all; text-align:left;">(852)&nbsp;2358&nbsp;5934</span>
+              </li>
+              <li><span style="display:inline-block; width:3.5em; text-align:right"></span>
+                <span style="display:inline-block; width:10em;word-break:keep-all; text-align:left;">(852)&nbsp;2358&nbsp;5935</span>
+              </li>
+              <li><span style="display:inline-block; width:3.5em; text-align:right"></span>
+                <span style="display:inline-block; width:10em;word-break:keep-all; text-align:left;">(852)&nbsp;2358&nbsp;8224</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="second-bar">
+        <div class="container">
+          <h6> Copyright &copy; 2024 School of Engineering, HKUST All Rights Reserved</h6>
+        </div>
+      </div>
+    </footer>
+
+    <div id="overlay" class="overlay">
+      <div class="overlay-content">
+        <h2>NEW STUDENT ORIENTATION 2024</h2>
+        <p><strong>Attention, Future Engineers: Your Journey Begins Here!</strong></p>
+        <p>Welcome to the School of Engineering (SENG), where we are dedicated to ensuring your smooth transition into university life. To make this experience truly unforgettable, we have curated a series of captivating events exclusively tailored for you. It is important that you attend <strong>ALL</strong> the events according to your type of admission (JUPAS/local, non-JUPAS/non-local).</p>
+        <p>Event details for senior entry students will be informed by their program offices.</p>
+        <p>Here are a series of orientation activities planned for you to help you get to know more about the School of Engineering and your curriculum. Mark down your calendar and make sure you don’t miss them!</p>
+
+        <h3>Academic Advising (COMPULSORY)</h3>
+        <p>All new Engineering students in the undeclared plan will be invited by email to attend a specific session based on your type of admission.</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Admission Type</th>
+              <th>Date</th>
+              <th>Mode</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">JUPAS Students</td>
+              <td>
+                August 8 (Thu) 11:00 – 12:30 or 14:00 – 15:30<br>
+                August 9 (Fri) 11:00 – 12:30<br>
+              </td>
+              <td>In-person</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Course Registration and Advising</strong><br>
+                August 8 (Thu) – 9 (Fri) 10:00 – 17:00<br>
+                Academic advisors and peer mentors will go through the course registration process with students. Students should complete the Course Registration by Aug 10, 17:30.
+              </td>
+              <td>In-person</td>
+            </tr>
+            <tr>
+              <td rowspan="4">Non-JUPAS students</td>
+              <td>
+                July 26 (Fri) 14:00 – 15:00<br>for students with offer confirmed by July 25 (Thu)<br>
+              </td>
+              <td>Mixed-Mode</td>
+            </tr>
+            <tr>
+              <td>
+                August 2 (Fri) 14:00 – 15:00<br>for students with offer confirmed by August 1 (Thu)<br>
+              </td>
+              <td>Mixed-Mode</td>
+            </tr>
+            <tr>
+              <td>
+                August 23 (Fri) 11:00 – 12:00<br>only for students who cannot attend the previous sessions.<br>
+              </td>
+              <td>In-person</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Course Registration and Advising Online helpdesk<br>(For non-JUPAS students not in Hong Kong)</strong><br>
+                August 8 (Thu) – 9 (Fri) 12:00 – 16:00<br>
+                Academic advisors and peer mentors will be available to assist you with the course registration process.
+              </td>
+              <td>Zoom</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Peer Mentoring Program (COMPULSORY)</h3>
+        <p>Mid Aug to late Aug</p>
+        <p>Each new student will be assigned to one peer mentor who will provide support and advice to first year students. Peer Mentors will organise house orientation activities to welcome first year students and assist students in their transition into university life.</p>
+        <p>For more information about the SENG Peer Mentoring Program <a href="https://e2i.hkust.edu.hk/peer-mentoring-program">https://e2i.hkust.edu.hk/peer-mentoring-program</a></p>
+        <p>Details will be sent to students through email.</p>
+
+        <h3>School Welcome and Orientation (COMPULSORY)</h3>
+        <p>Date: Aug 28, 2024 (Wed)<br>Venue: S. H. Ho Sports Hall</p>
+        <p>Details will be sent to students through email.</p>
+
+        <h3>Enquiries</h3>
+        <p>MR CODY NGAN / MR THOMAS YEUNG / MS CHRISTINE SO<br>Email: <a href="mailto:sengadvisor@ust.hk">sengadvisor@ust.hk</a></p>
+
+        <h3>First-Year guidebook</h3>
+        <p>Download the Guidebook for First Year Engineers <a href="file/guidebook_2024-25.pdf" role="button" target="_blank">here</a>.</p>
+
+        <button onclick="closeOverlay()" id="closeOverlay">Close</button>
+      </div>
+    </div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			// update dates
+			if (Date.now() - Date.parse("Aug 10 2024 00:00:00 GMT+0800") > 0) {
+				$(".before-event").addClass("hidden");
+				$(".after-event").removeClass("hidden");
+			}
+			var parallax_func = function () {
+				var parallax = document.querySelectorAll(".parallax"),
+					speed = -0.5;
+				[].slice.call(parallax).forEach(function (el, i) {
+					var windowYOffset = window.pageYOffset,
+						elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
+					if ($(window).width() >= 768)
+						el.style.backgroundPosition = elBackgrounPos;
+					var opacity = 1 - windowYOffset / $(window).height() * 2;
+					$('.index-canvas').css("color", "rgba(255,255,255," + opacity + ")");
+          $('.index-canvas-btn').css("opacity", opacity);
+					var opacity2 = 1;
+					if ($(window).width() < 992)
+						opacity2 = 1;
+					else
+						opacity2 = 1 - ($('.index-logo-box').offset().top - windowYOffset - $(window).height()) / ($('.index-logo-box').offset().top - $('.index-tool').offset().top - $('.index-tool').height() * 0.8);
+					$('.index-tool-content').css("opacity", opacity2);
+
+				});
+			}
+
+			$(document).scroll(parallax_func).ready(parallax_func);
+
+			$(window).load(window_resize);
+			$(window).resize(window_resize);
+
+			var window_resize = function () {
+				if ($(window).width() < 768) {
+					//$('html,body').css('overflow-x', 'hidden');
+					//$('html,body').css('overflow-y', 'scroll');
+					$('.index-canvas h5').css('font-size', '3vw');
+					$('.index-canvas h6').css('font-size', '2.5vw');
+				}
+				if ($(window).width() <= 350) {
+					$('.index-tool-content h2').css('font-size', '24px');
+					} else if ($(window).width() < 768) {
+					$('.index-tool-content h2').css('font-size', '28px');
+					} else {
+					$('.index-tool-content h2').css('font-size', '30px');
+					}
+					}
+
+					$(window).load(function () {
+					$(document).scroll(nav_size).ready(nav_size);
+					$(window).resize(nav_size);
+					});
+
+					var scroll_start = 0;
+					var nav_size = function () {
+					scroll_start = $(this).scrollTop();
+					if ($(window).width() < 768)
+					$('.navbar-default .navbar-nav > li > a').css('line-height', '20px');
+					else
+					$('.navbar-default .navbar-nav > li > a').css('line-height', '50px');
+					if (scroll_start > 200 || $(window).width() < 768) {
+					$('.navbar-default .navbar-brand').css('padding', '2px 0px 0px 15px');
+					$('.index-nav').css('background-color', 'rgba(11,96,166,1.00)');
+					} else {
+					$(".navbar-default .navbar-brand").css('padding', '15px 0px 0px 15px');
+					$('.navbar-default .navbar-nav > li > a').css('line-height', '80px');
+					$('.index-nav').css('background-color', 'rgba(0,24,67,0.47)');
+					}
+					console.log($(window).width());
+					}
+
+					$(document).ready(function () {
+					// Add smooth scrolling to all links
+					$("a").on('click', function (event) {
+
+					// Make sure this.hash has a value before overriding default behavior
+					if (this.hash !== "") {
+						// Prevent default anchor click behavior
+					event.preventDefault();
+
+					// Store hash
+					var hash = this.hash;
+
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate({
+					scrollTop: $(hash).offset().top
+					}, 800, function () {
+
+// Add hash (#) to URL when done scrolling (default click behavior)
+window.location.hash = hash;
+});
+} // End if
+});
+});
+		</script>
+	</body>
+
+</html>

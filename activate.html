@@ -1,0 +1,1073 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome To SENG - Pre-enrollment</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <link rel="stylesheet" type="text/css" href="css/Footer-with-logo-sticky.css">
+    <style>
+      .faq-toggle i {
+        position: absolute;
+        background: url(img/expandable.png) 0px -24px no-repeat;
+        width: 24px;
+        height: 24px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        margin: 9px 2px 20px 0px;
+        right: 0;
+      }
+
+          .active i {
+            background: url(img/expandable.png) 0px 0px no-repeat;
+          }
+
+          td {
+            text-align: center;
+            vertical-align: middle !important;
+            font-size: 1.8vh;
+          }
+
+          .course-table-head {
+            font-weight: 700;
+            text-align: left;
+          }
+
+          .activate-faq-div {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 5;
+          }
+
+          .activate-faq-div a {
+            height: 60px;
+            width: 60px;
+            background-image: url(img/faq_icon.png);
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            display: inline-block;
+          }
+
+          .activate-faq-box {
+            max-width: 500px;
+            width: calc(100vw - 20px);
+            height: 70vh;
+            display: none;
+            position: absolute;
+            top: -71vh;
+            right: 0px;
+            border-radius: 10px;
+            z-index: 50;
+          }
+
+          @media screen and (max-width: 767px) {
+            .activate-faq-div {
+              bottom: 10px;
+              right: 10px;
+            }
+          }
+    </style>
+    <base target="_blank">
+  </head>
+
+  <body>
+
+    <!--
+    <div class="modal fade" id="step-3-modal" tabindex="-1" role="dialog" aria-labelledby="step-3-modal-title" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="step-3-modal-title" style="display: inline-block;">Warning</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body warning-style">
+            <p>This video contains important messages. Please check:</p>
+            <div id="step-3-q1">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="q1" id="optionsQ1-1" value="1">
+                  I have watched the entire video
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="q1" id="optionsQ1-2" value="2">
+                  I understand the messages delivered
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onClick="step3SkipCheck(event);">Skip</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="step-6-xs" tabindex="-1" role="dialog" aria-labelledby="step-6-xs-title" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="step-6-large-2" width="100%" src="img/clan/CP_preview.jpg" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+    <nav class="navbar navbar-default navbar-fixed-top index-nav" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand hidden-xs" href="index.html"><img src="img/seng_logo_l.png" class="shadowed"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right index-nav-list">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li>
+              <a class="before-event" href="advisingSession.html">Orientation Talk</a>
+              <a class="after-event hidden" href="advisingSession.html">Orientation Talk Recording</a>
+            </li>
+            <li><a href="houses.html">SENG Houses</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <a name="top"></a>
+    <div class="content">
+      <div class="container steps" style="padding-top: 60px">
+        <div class="row" style="padding: 10px;">
+          <div class="progress hidden" id="progress1">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+            </div>
+            <span class="progress-completed">0%</span>
+          </div>
+        </div>
+
+        <div class="row" style="padding: 10px;" id="step-null">
+          <h1>Please enable JavaScript to use this page!</h1>
+        </div>
+
+
+        <div class="row hidden" style="padding: 10px;" id="step-0">
+          <h1>Follow the Steps!</h1>
+          <p class="text-justify">Congratulations on your acceptance into the School of Engineering (SENG) at the Hong Kong University of Science and Technology (HKUST)!</p>
+          <p>This is an interactive step-by-step tutorial that will guide you through the registration and pre-enrollment process. </p>
+          <p>To complete the registration process, you need to read through each step carefully and follow the given instructions. Please do not skip any step or switch to other browser tabs since every step is of paramount importance.</p>
+          <br>
+          <p class="bg-info" style="padding:10px; border-radius: 5px;">Use of personal computer is recommended for completion of the whole pre-enrollment process. This website is best viewed in Chrome.  </p>
+          <br>
+          <p>The Orientation Talk will be held at <span style="color:red;">11:00AM and 2:00PM on 8 Aug 2024, and 11:00AM on 9 Aug 2024 (HK Time)</span>, according to your surname. You are advised to go through some of the steps before attending the Advising Session. These steps take approximately 30 minutes.</p>
+        </div>
+
+        <div class="row hidden" style="padding: 10px;" id="step-1">
+          <h1>ITSC Account </h1>
+          <p>The University provides each student an ITSC network account, which allows you access to various campus services and computers within the campus.</p>
+          <p>You <strong>should have already activated</strong> your ITSC account at this stage. It is important that you remember your ITSC username and password as you will need it to login to the Online Advising Session later.</p>
+          <br>
+          <p>Follow the link below to activate your ITSC account if you have not complete the process.</p>
+          <a href="https://myaccount.ust.hk/ams/commonConsole/acctActivation" class="btn btn-activate-link">Click here to activate your ITSC account</a>
+          <p>Contact our <a href="contact.html">Academic Advisor</a> if you forgot your ITSC username. Click <a href="https://itsc.ust.hk/services/general-it-services/user-account/forgot-password">here</a> if you forgot your ITSC password.</p>
+          <br>
+          <p class="bg-info" style="padding:10px; border-radius: 5px;">If you have already activated your ITSC account, please move on to the next step.</p>
+        </div>
+
+        <!--
+          <div class="row hidden" style="padding: 10px;" id="step-1-1">
+      <div class="col-xs-12 col-sm-8">
+      <h1>Campus Access Pass (CAP)</h1>
+      <p>In view of the COVID-19 situation, all students are <strong>required</strong> to present a valid electronic Campus Access Pass (CAP) for accessing the campus.</p>
+      <br>
+      <a href="https://vacwecan.hkust.edu.hk/" class="btn btn-activate-link">Campus Access Pass</a>
+      <br>
+      <p>You<strong> may not be able to enter the campus</strong> if you fail to show a valid electronic CAP.</p>
+      <br>
+      <p>For any enquires regarding the Campus Access Pass, please refer to the <a href="https://vacwecan.hkust.edu.hk/help">COVID 19 Vaccination / Testing Reporting System</a>.</p>
+      </div>
+      <div class="col-xs-2 col-sm-0" ></div>
+      <div class="col-xs-8 col-sm-4" >
+      <img src="/img/CAP.jpg" class="img-responsive">
+      </div>
+      <div class="col-xs-2 col-sm-0" ></div>
+      <div class="col-xs-12 col-sm-12">
+      <br>
+      <p class="bg-info" style="padding:10px; border-radius: 5px;">If you have already registered your Campus Access Pass, please move on to the next step.</p>
+      </div>
+      </div>
+        -->
+
+        <div class="row hidden" style="padding: 10px;" id="step-2">
+          <h1>Dean's Message</h1>
+          <video src="video/Dean_Welcome_Message.mp4" width="100%" id="step-2-video" poster="video/Dean_Welcome_Message_thumb.png" controls>
+            video not supported
+          </video>
+          <p>If the video is running slow, please click <a onclick="javascript: step2Low();" role="button" style="text-decoration:underline;">here</a> for 720p version.</p>
+          <p>This video contains important messages. Please make sure you have watched the entire video before moving on to the next step.</p>
+        </div>
+
+        <div class="row hidden" style="padding: 10px;" id="step-3">
+          <h1>Explore the Curriculum</h1>
+          <video src="video/Reg_Course_Procedure.mp4" width="100%" id="step-3-video" poster="video/Reg_Course_Procedure_thumb.jpeg" controls>
+            video not supported
+          </video>
+          <p>If the video is running slow, please click <a onclick="javascript: step3Low();" role="button" style="text-decoration:underline;">here</a> for 480p version.</p>
+          <p class="bg-info" style="padding:10px; border-radius: 5px;">The Course Registration video contains important messages regarding to the whole course registration procedure. Please watch the entire video before moving on to the next step. </p>
+          <p>The following required courses have already been pre-enrolled for you, totalling 7 or 8 credits:</p>
+          <ul style="font-size:1.8vh">
+            <li>HMAW1905B &ndash; Behaviour Foundations of University Education: Habits, Mindset and Wellness <small><span style="color:#777777;">[ 1 credit in Fall 2024 ]</span></small></li>
+            <li>English Communication (E-Comm)<small><span style="color:#777777;">[ 3 credits ]</span></small></li>
+            <li>MATH1012 / MATH1013 &ndash; Calculus IA / Calculus IB <small><span style="color:#777777;">[ 4 or 3 credits ]</span></small></li>
+          </ul>
+          <p>Please note the following additional details:</p>
+          <ul style="font-size:1.8vh">
+            <li>Credit transfers may be applicable.</li>
+            <li>HMAW1905B is a year-long course for year one students, with a total of 3 credits. You will take 1 credit in Fall 2024 and 2 credits in Spring 2025.</li>
+            <li>All new students will be pre-enrolled in an E-Comm course (LANG1402 / LANG1407) in Fall 2024-25 based on your submitted public examination result.</li>
+          </ul>
+          <p>You can refer to the <a href="https://prog-crs.hkust.edu.hk/ugcourse">Undergraduate Course Catalog</a> for more details about the courses listed below.</p>
+          <!-- HIDE TABLEhttps://registry.hkust.edu.hk/resource-library/student-portal
+          <div class="faq-toggle">
+            <div class="faq-toggle-title" style="border:hidden; background-color:#d9edf7; border-radius: 5px;">
+              <i></i>
+              <h4><span class="faq-title-name" style="padding-left:10px; font-weight:700;">Course Recommended&nbsp;&nbsp;&nbsp;<span style="display:inline-block; word-break:keep-all;;"><small></small></span></span></h4>
+            </div>
+            <div class="activate-toggle-inner" style="overflow-x: auto; overflow-y: hidden;">
+              <p>The following courses are recommended by different Departments/Programs. You may choose accordingly to your preference.</p>
+              <table class="table table-striped">
+                <tr class="info">
+                  <td width="40%" class="course-table-head">Chemical and Biological Engineering (CBE)</td>
+                  <td width="20%">CENG1000 / CENG1700</td>
+                  <td width="20%">COMP1021</td>
+                  <td width="20%">PHYS1101 / PHYS1112 / CHEM1008/ CHEM1012 / LIFS1901</td>
+                </tr>
+                <tr>
+                  <td class="course-table-head">Civil and Environmental Engineering (CIVL)</td>
+                  <td>CIVL1100</td>
+                  <td>COMP1021</td>
+                  <td>PHYS1101 / PHYS1112 / CHEM1008 / CHEM1012</td>
+                </tr>
+                <tr class="info">
+                  <td class="course-table-head">Computer Science and Engineering (CSE)</td>
+                  <td></td>
+                  <td>COMP1021</td>
+                  <td>PHYS1101 / PHYS1112 / CHEM1008 / CHEM1012 / LIFS1901</td>
+                </tr>
+                <tr>
+                  <td class="course-table-head">Computer Engineering (CPEG)</td>
+                  <td>ELEC1100</td>
+                  <td>COMP1021</td>
+                  <td>PHYS1101 / PHYS1112</td>
+                </tr>
+                <tr class="info">
+                  <td class="course-table-head">Electronic and Computer Engineering (ELEC)</td>
+                  <td>ELEC1100 / ELEC1200</td>
+                  <td>COMP1021</td>
+                  <td>PHYS1101 / PHYS1112</td>
+                </tr>
+                <tr>
+                  <td class="course-table-head">Industrial Engineering and Decision Analytics (IEDA)</td>
+                  <td>IEDA2010</td>
+                  <td>COMP1021</td>
+                  <td>PHYS1101 / PHYS1112 / CHEM1008 / CHEM1012</td>
+                </tr>
+                <tr class="info">
+                  <td class="course-table-head">Mechanical and Aerospace Engineering (MAE)</td>
+                  <td>MECH1902 / MECH1907</td>
+                  <td>COMP1021</td>
+                  <td>PHYS1101 / PHYS1112 / CHEM1008 / CHEM1012 / LIFS1901</td>
+                </tr>
+                <tr>
+                  <td class="course-table-head">Sustainable Energy Engineering (SUSEE)</td>
+                  <td>CENG1700 / MECH1902</td>
+                  <td>COMP1021</td>
+                  <td>PHYS1101 / PHYS1112 / CHEM1008 / CHEM1012</td>           
+                </tr>
+                <tr class="active">
+                  <td class="course-table-head">Multiple Disciplines</td>
+                  <td>Engineering Introduction Courses / ENGG1100</td>
+                  <td>COMP1021</td>
+                  <td>PHYS1101 / PHYS1112 / CHEM1008 / CHEM1012 / LIFS1901</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          -->
+          <br>
+          <p>For more information about class schedule, you can refer to the <a href="https://w5.ab.ust.hk/wcq/cgi-bin/">HKUST Class Schedule &amp; Quota</a>.</p>
+          <p>See the <a href="faq.html">FAQ</a> for further course enrollment details.</p>
+        </div>
+
+        <div class="row hidden" style="padding: 10px;" id="step-4">
+          <h1>Important Dates</h1>
+
+          <p> Please mark down the important dates for class enrollment. </p>
+          <br>
+
+          <p style="padding:10px; border-radius: 5px; max-width:750px; border: 3px solid #2F74C9;">
+            <strong>Pre-enrollment</strong> : starts<span style="color:red;"> <strong>10:00AM 8 Aug 2024 (HK Time)</strong></span><br>
+            Pre-register and revise your course selection through e-Advising system by the deadline
+            <br><strong>Pre-enrollment deadline</strong> :<span style="color:red;"> <strong>5:30PM 10 Aug 2024 (HK Time)</strong></span>
+          </p>
+          <span style="display:inline-block; width: 45vw; max-width: 245px;"></span><span class="glyphicon glyphicon-arrow-down" style="color:#1B5AAF"></span>
+          <p style="padding:10px; border-radius: 5px; max-width:750px; border: 3px solid #2F74C9;">
+            <strong>Pre-enrollment result release</strong>: Prior to <span style="color:red;"><strong>23 Aug 2024 (HK Time)</strong></span><br>
+            Review your personal timetable and explore additional courses.<br>
+            You may also submit request for special enrollment cases via <a href="https://registry.hkust.edu.hk/resource-library/how-request-approval-and-what-should-i-do-after">Request for Approval</a>.
+          </p>
+          <span style="display:inline-block; width: 45vw; max-width: 245px;"></span><span class="glyphicon glyphicon-arrow-down" style="color:#1B5AAF"></span>
+          <p style="padding:10px; border-radius: 5px; max-width:750px; border: 3px solid #2F74C9;">
+            <strong>Class Enrollment starts </strong> : <span style="color:red;"><strong>27&ndash;28 Aug 2024 (HK Time)</strong></span><br>
+            Adding new courses up to 18 credits
+          </p>
+          <span style="display:inline-block; width: 45vw; max-width: 245px;"></span><span class="glyphicon glyphicon-arrow-down" style="color:#1B5AAF"></span>
+          <p style="padding:10px; border-radius: 5px; max-width:750px; border: 3px solid #2F74C9;">
+            <strong>Add/Drop Period </strong> : <span style="color:red;"><strong>2&ndash;14 Sep 2024 (HK Time)</strong></span><br>
+            Finalize ALL courses for Fall 2024
+          </p>
+        </div>
+
+        <div class="row hidden" style="padding: 10px;" id="step-5">
+          <div class="before-event">
+            <h1>Orientation Talk</h1>
+              <p>Please attend the Orientation Talk and advising sessions before you start the Online Course Registration. </p>
+              <p>Prof. Henry LAM, Director of Center for Engineering Education Innovation (E&sup2I), will introduce the HKUST and School of Engineering.  Some practical tips will also be shared for your first year of study. </p>
+              <br>
+              <p> Students with surname starting with <strong>A-J</strong> are advised to attend the session at <span style="color:red;">11:00AM</span>.</p>
+              <h3>Date: <span style="color: #FF0000;">8 Aug 2024</span></h3>
+              <h3>Time: <span style="color: #FF0000;">11:00AM &ndash; 12:00NN</span></h3>
+              <h3>Venue: Lecture Theatre J</h3>
+              <br>
+              <p> Students with surname starting with <strong>K-R</strong> are advised to attend the session at <span style="color:red;">2:00PM</span>.</p>
+              <h3>Date: <span style="color: #FF0000;">8 Aug 2024</span></h3>
+              <h3>Time: <span style="color: #FF0000;">2:00PM &ndash; 3:00PM</span></h3>
+              <h3>Venue: Lecture Theatre J</h3>
+              <br>
+              <p> Students with surname starting with <strong>S-Z</strong> are advised to attend the session at <span style="color:red;">11:00AM</span>.</p>
+              <h3>Date: <span style="color: #FF0000;">9 Aug 2024</span></h3>
+              <h3>Time: <span style="color: #FF0000;">11:00AM &ndash; 12:00NN</span></h3>
+              <h3>Venue: Lecture Theatre J</h3>
+          </div>
+          <div class="after-event hidden">
+            <h1>Orientation Talk Recording <span style="display:inline-block; word-break:keep-all;color:#FF0000; font-size:3vh;">on 8 Aug 2024 </span></h1>
+            <p>Check out the orientation talk recording video before you start the Online Course Registration. In this talk, Prof. Henry LAM introduces the HKUST and School of Engineering to you. Advice and some practical hints are also be shared for your first year of study.</p>
+            <br>
+            <p>Click for the recording if you have missed the live session.</p>
+            <video src="video/advising_recording.mp4" width="100%" id="step-4-video" poster="video/advising_recording.jpg" controls>
+              video not supported
+            </video>
+            <br>
+            <!--
+            <p>You can find the PowerPoint slide <a href="file/advising_presentation.pdf" target="_blank">here</a>.
+            -->
+          </div>
+        </div>
+
+        <div class="row hidden" style="padding: 10px;" id="step-6">
+          <h1>e-Advising System </h1>
+          <p> You can pre-register for the Engineering Introduction or Science Fundamental courses during this process. </p>
+          <p> If you have any inquiries regarding the course registration and/or other academic matters, talk to us first.  Our Academic Advisors and Peer Mentors can chat with you and provide academic advice to you.</p>
+          <br>
+          <a href="https://w5.ab.ust.hk/wsa/student" class="btn btn-activate-link">Click here for Course Pre-Enrollment</a>
+          <span style="color:red;">&nbsp;&nbsp;&nbsp;<span style="display:inline-block; word-break:keep-all;">Start: 10:00AM, 8 Aug 2024 (HK Time)<br>Deadline: 5:30PM 10 Aug 2024 (HK Time)</span></span><br>
+        </div>
+
+        <div class="row hidden" style="padding: 10px;" id="step-7">
+          <h1>Chat with Peer Mentors </h1>
+          <p>Our Academic Advisors and Peer Mentors are here to answer your enquires including but not limited to <strong>Course Registration</strong>, <strong>Credit Transfer</strong> and <strong>Course Plan</strong>.  We provide Course Registration and Advising session for the newly admitted students. Please refer to the details below:</p>
+          <h4><strong>Course Registration and Academic Advising</strong></h4>
+          <p>Date: <span style="color: #FF0000;"><strong>8&ndash;9 Aug (Thu&ndash;Fri)</strong></span></p>
+          <p>Time: <span style="color: #FF0000;"><strong>10:00AM&ndash;5:00PM</strong></span></p>
+          <p>Venue: Engineering Common (Room 2580 via Lift 27-28)</p>
+          <br>
+          <p>If you are unable to join the session, you may also email us at <a href="mailto:sengadvisor@ust.hk">sengadvisor@ust.hk</a> for enquiry or to arrange a meeting.</p>
+          <br>
+            <div class="row" ><!-- style="display: flex; justify-content: center;" -->
+              <div class="col-md-6">
+                <div class="chat-with-peer-mentor">
+                  <p style="text-align: center;"><img class="img" src="img/learning_strat.jpg" style="width:100%;border-radius: 1rem;">
+                  </p>
+                </div>
+                <br>
+                <!--
+                <h2>
+                  <p style="text-align: center;font-weight:1500; font-size:3vh">Course Registration</p>
+                </h2>
+                <p style="text-align: center;font-weight:1500; font-size:2vh">Enquires about class enrollment </p>
+                <p style="text-align: center;font-weight:1500; font-size:2vh; color:red;">12:00 - 17:00, 12 & 15 Aug 2022 (HK Time)</p>
+                <p style="text-align: center;"><img src="img/zoom_icon_white_bg.png" width="5%" /> Zoom meeting ID:  977 5383 5526<br />Passcode: seng</p>
+                <p style="text-align: center;"><a class="btn btn-default" href="https://hkust.zoom.us/j/97753835526?pwd=U3krdXVHK3pMOFBXSnlEeVpOQUZJQT09" role="button" target="_blank" style="text-decoration:none !important;">Course Registration &raquo;</a></p>
+                -->
+              </div>
+              <div class="col-md-6">
+                <div class="chat-with-peer-mentor">
+                  <p style="text-align: center;">
+                    <img class="img" src="img/credit_transfer.jpg" style="width:100%;border-radius: 1rem;">
+                  </p>
+                </div>
+                <br>
+                <!--
+                <h2>
+                  <p style="text-align: center;font-weight:1500; font-size:3vh">Credit Transfer </p>
+                </h2>
+                <p style="text-align: center;font-weight:1500; font-size:2vh"> Enquires about credit transfer from other qualifications </p>
+                <p style="text-align: center;font-weight:1500; font-size:2vh; color:red;">12:00 - 17:00, 12 & 15 Aug 2022 (HK Time)</p>
+                <p style="text-align: center;"><img src="img/zoom_icon_white_bg.png" width="5%" /> Zoom meeting ID: 974 7221 8212<br />Passcode: seng  </p>
+                <p style="text-align: center;"><a class="btn btn-default" href="https://hkust.zoom.us/j/97472218212?pwd=SkhBTjJWQU1SMzloRG9hcjhpaDgvQT09" role="button" target="_blank" style="text-decoration:none !important;">Credit Transfer &raquo;</a></p>
+                -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="chat-with-peer-mentor">
+                  <p style="text-align: center;"><img class="img" src="img/study_plan.jpg" style="width:100%;border-radius: 1rem;"> </p>
+                </div>
+                <br>
+                <!--
+                <h2>
+                  <p style="text-align: center;font-weight:1500; font-size:3vh">Course Plan </p>
+                </h2>
+                <p style="text-align: center;font-weight:1500; font-size:2vh"> How to choose courses for your desired major</p>
+                <p style="text-align: center;font-weight:1500; font-size:2vh; color:red;">12:00 - 17:00, 12 & 15 Aug 2022 (HK Time)</p>
+                <p style="text-align: center;"><img src="img/zoom_icon_white_bg.png" width="5%" /> Zoom meeting ID: 936 6264 4518<br />Passcode: seng</p> <p style="text-align: center;"><a class="btn btn-default" href="https://hkust.zoom.us/j/93662644518?pwd=UnExMU1tY21abXlweTV2TkhqdENaQT09" role="button" target="_blank" style="text-decoration:none !important;">Course Plan &raquo;</a></p>
+                -->
+              </div>
+              <div class="col-md-6">
+                <div class="chat-with-peer-mentor">
+                  <p style="text-align: center;"><img class="img" src="img/u_life.jpg" style="width:100%;border-radius: 1rem;"> </p>
+                </div>
+                <br>
+                <!--
+                <h2>
+                  <p style="text-align: center;font-weight:1500; font-size:3vh">Class Enrollment Walkthrough</p>
+                </h2>
+                <p style="text-align: center;font-weight:1500; font-size:2vh"> To be available after the course pre-enrollment</p>
+                <p style="text-align: center;font-weight:1500; font-size:2vh; color:red;">12:30 - 17:00, 26 Aug 2022 (HK Time) </p>
+                <p style="text-align: center;"><img src="img/zoom_icon_white_bg.png" width="5%" /> Zoom meeting ID: 957 7878 2920<br />Passcode: seng</p>
+                <p style="text-align: center;"><a class="btn btn-default" href="ttps://hkust.zoom.us/j/95778782920?pwd=alJCSnRGRHovMFpUWE50TVBudUN6UT09" role="button" target="_blank" style="text-decoration:none !important;">Class Enrollment Walkthrough &raquo;</a></p>
+                -->
+              </div>
+            </div>
+        </div>
+
+        <div class="row hidden" style="padding: 10px;" id="step-8">
+          <h1>Confirm Your Selection</h1>
+          <p>After choosing your preferred courses in e-Advising, you need to check HKUST email account to confirm your selection.</p>
+          <p>Once you have activated your ITSC Network account, you will automatically receive an HKUST email account and an associated email storage quota is provided to address your study or communication needs.</p>
+          <p>HKUST email account shares the same password as ITSC network account. For the email address, the format is <code>username@connect.ust.hk</code> where <code>username</code> is your ITSC account login name.</p>
+          <br>
+          <a href="https://o365.ust.hk/" class="btn btn-activate-link">Click here to enter HKUST email system and confirm your selection</a>
+        </div>
+
+        <div class="row hidden clan" style="padding: 10px;" id="step-9">
+          <style>
+          .border-between > [class*='col-']:after {
+            background: #000000;
+            bottom: 0;
+            content: " ";
+            left: 0;
+            position: absolute;
+            width: 1px;
+            top: 0;
+          }
+          .border-between > [class*='col-']:nth-child(3n+2):after {
+            display: none;       
+          }
+          .border-between > [class*='col-']:nth-child(1):after {
+            display: none;       
+          }
+          .clan table, .clan th, .clan td {
+            border: 1px solid black;
+          }
+          .clan table{
+            margin: 0 auto;
+            width: 80%;
+          }
+          .clan th {
+            text-align: center;
+            font-size: 15px;
+          } 
+          </style>
+          <a>
+            <img src="img/clan/house_banner.jpg" width="100%" />
+          </a>
+          <h1>About Houses</h1>
+          <p>The School of Engineering adopts a house system for first-year advising, which is facilitated by the Peer Mentoring Program (PMP). Each house comprises a diverse mix of first-year engineering undergraduates, including local, mainland, and international students, and is aided by SENG faculty, staff advisors, and senior student mentors. Apart from delivering guidance and assistance through peer advisory sessions, the Peer Mentors also arrange a variety of activities in various areas of interest to enrich your first-year journey in the School.</p>
+          <p>You can indicate your preference of joining which House <a href="https://ust.az1.qualtrics.com/jfe/form/SV_8ANqXFTnFVKtPsW">here</a>.</p>
+          <!--
+          <p><strong>Your tutorial class number (e.g. T01) in HMAW1905 will decide which House you belong to.</strong></p>
+          <table style="font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif;">
+            <tr style="background-color: #d9edf7;">
+              <th>House Name</th>
+              <th>HMAW1905 Tutorial Class Number</th>
+            </tr>
+            <tr>
+              <th><span style="color:#FF0000;">House 1 Ace</span></th>
+              <th><span style="color:#FF0000;">T01-T09</span></th>
+            </tr>
+            <tr>
+              <th><span style="color:#0000FF;">House 2 Oasis</span></th>
+              <th><span style="color:#0000FF;">T10-T18</span></th>
+            </tr>
+            <tr>
+              <th><span style="color:#00FF00;">House 3 Nexus</span></th>
+              <th><span style="color:#00FF00;">T19-T27</span></th>
+            </tr>
+            <tr>
+              <th><span style="color:#A0A0A0;">House 4 Metanoia</span></th>
+              <th><span style="color:#A0A0A0;">T28-T36</span></th>
+            </tr>
+          </table>
+          -->
+          <p><strong>You will receive an email in late August containing information about the house to which you belong.</strong></p>
+          <p>The four houses that belong to SENG are: <strong><span style="color:#FF0000;">Blaze</span>, <span style="color:#0000FF;">Neptune</span>, <span style="color:#00FF00;">Sage</span>, and <span style="color:#A0A0A0;">Ravens</span></strong>.</p>
+          <details open style="width: 80%; margin: 0 auto; background: rgba(255,0,0,0.3); border-radius: 15px;">
+            <summary style="background: #FF0000; color: white; text-align: center; padding: 5px; cursor: pointer; margin: 0 auto; border-radius: 10px;">
+              <h2 style="margin: 0;">Red House &ndash; Blaze</h2>
+            </summary>
+            <p style="width: 90%; margin: 0 auto;">As the Red House, our hunger for innovating and creating blazes like a fire, we embrace the symbol of fire which connects strongly with our colors. We see reflections of us the engineers, in the powerful, fierce, driven, and passionate blaze. The Red House strongly believes in the spirit of collaboration and teamwork. The Red House is a community where engineers engage to create and innovate. It is not only a hub for the scholar but also for friendship, brotherhood, and sisterhood. Our connections create a strongly bonded community where each member feels safe, included, and happy. We help each other learn, grow, and flourish. We support each other when we face a challenge or feel stuck. The Red House values diversity of thought and background, recognizing that varied experiences contribute to richer innovation and problem-solving. The Red House promotes an inclusive culture where individuals of all identities feel respected and valued for their contributions. Recognizing and celebrating individual and collective achievements reinforces a culture of positivity, motivation, and mutual support within the community.</p>
+          </details>
+          <div style="height: 30px;"></div>
+          <details open style="width: 80%; margin: 0 auto; background: rgba(0,0,255,0.3);border-radius: 15px;">
+            <summary style="background: #0000FF; color: white; text-align: center; padding: 5px; cursor: pointer; margin: 0 auto; border-radius: 10px;">
+              <h2 style="margin: 0;">Blue House &ndash; Neptune</h2>
+            </summary>
+            <p style="width: 90%; margin: 0 auto;">Welcome to Blue House, also known as Neptune! We aim to foster a spirit of adventure, discovery, and thrill for our mentees, so that you can connect with the wonders of university life, from the vast array of majors to choose from to the many friends you’ll meet from all over the world. We mentors will be here to assist you along the way, serving as guides to help you overcome challenges, find moments of rest, and maintain unwavering determination in the journey ahead.</p>
+          </details>
+          <div style="height: 30px;"></div>
+          <details open style="width: 80%; margin: 0 auto; background: rgba(0,255,0,0.3);border-radius: 15px;">
+            <summary style="background: #00FF00; color: white; text-align: center; padding: 5px; cursor: pointer; margin: 0 auto; border-radius: 10px;">
+              <h2 style="margin: 0;">Green House &ndash; Sage</h2>
+            </summary>
+            <p style="width: 90%; margin: 0 auto;">Oasis of guidance, quenches the thirst of new engineering students seeking direction.</p>
+          </details>
+          <div style="height: 30px;"></div>
+          <details open style="width: 80%; margin: 0 auto; background: rgba(160,160,160,0.3);border-radius: 15px;">
+            <summary style="background: #A0A0A0; color: white; text-align: center; padding: 5px; cursor: pointer; margin: 0 auto; border-radius: 10px;">
+              <h2 style="margin: 0;">Grey House &ndash; Ravens</h2>
+            </summary>
+            <p style="width: 90%; margin: 0 auto;">The group name "Ravens" for the Grey House represents a sense of wisdom, mentoring, and homeliness. Just like the raven, known for its intelligence and guidance, this group embodies these qualities. They provide a supportive and nurturing environment, where individuals can seek guidance and learn from one another. The Grey House named Raven is a place where wisdom is shared, and mentoring relationships are fostered, creating a warm and welcoming atmosphere that feels like home.</p>
+          </details>
+        </div>
+
+        <div class="row hidden" style="padding: 10px;" id="step-10">
+          <h1>School Welcome and Orientation</h1>
+          <br>
+          <p><strong>School Welcome and Orientation</strong> is SENG’s official undergraduate activity.</p>    
+          <p>This event is hosted by our passionate staff of Center for Engineering Education Innovation (E&sup2I) and a team of energetic peer mentors. Don't miss out this unique opportunity for networking, team building, and getting familiar with HKUST engineering community!</p>
+          <br>
+          <p>Details are as follows:</p>
+          <p><strong>
+              <span style="display:inline-block; width:4.5em;">Date:</span><span style="display:inline-block; color: red">28 August 2024 (Wed)</span><br>
+              <span style="display:inline-block; width:4.5em;"></span><span style="display:inline-block; color: red">10:00 AM - 5:30 PM </span>
+              <br>
+              <span style="display:inline-block; width:4.5em;">Venue:</span>HKUST S. H. Ho Sports Hall</strong>
+          </p>
+          <br>
+          <h1>List of Engineering and Departmental Student Societies</h1>
+          <br>
+          <p>Visit the website, Facebook and Instagram pages to learn more about the below HKUSTSU's societies.  </p>
+          <br>
+          <table class="table table-striped">
+            <tr class="info">
+              <td width="60%" class="course-table-head"><a target="_blank" href="http://esu.su.hkust.edu.hk/index.html">The Engineering Students’ Union</a></td>
+              <!-- <td width="15%"><a target="_blank" href="https://www.facebook.com/hkustsuesu"><img src="img/facebook.png" alt="FB icon" width="30" height="30"></a></td> -->
+              <td width="15%"><a target="_blank" href="https://www.instagram.com/esu_hkustsu/"><img src="img/instagram.png" alt="IG icon" width="30" height="30"></a></td>
+            </tr>
+            <tr>
+              <td class="course-table-head"><span style="color:#497bc7">The Chemical and Biological Engineering Students’ Society</span></td>
+              <!-- <td> </td> -->
+              <td><a target="_blank" href="https://www.instagram.com/cbess_hkustsu/"><img src="img/instagram.png" alt="IG icon" width="30" height="30"></a></td>
+            </tr>
+            <tr class="info">
+              <td class="course-table-head"><a target="_blank" href="https://ceesshkustsu.wixsite.com/ceess-hkustsu">The Civil and Environmental Engineering Students’ Society</a></td>
+              <!-- <td> </td> -->
+              <td><a target="_blank" href="https://instagram.com/civil.engine_hkustsu?igshid=MzRlODBiNWFlZA=="><img src="img/instagram.png" alt="IG icon" width="30" height="30"></a></td>
+            </tr>
+            <tr>
+              <td class="course-table-head"><span style="color:#497bc7">Computer Engineering Students’ Society</span></td>
+              <td><a target="_blank" href=" https://www.facebook.com/cpegss"><img src="img/facebook.png" alt="FB icon" width="30" height="30"></a></td>
+              <!-- <td></td> -->
+            </tr>
+            <tr class="info">
+              <td class="course-table-head"><a target="_blank" href="https://csess.su.hkust.edu.hk/">The Computer Science and Engineering Students’ Society</a></td>
+              <!-- <td><a target="_blank" href="https://www.facebook.com/csess.hkustsu"><img src="img/facebook.png" alt="FB icon" width="30" height="30"></a></td> -->
+              <td><a target="_blank" href="https://www.instagram.com/csess.hkustsu/"><img src="img/instagram.png" alt="IG icon" width="30" height="30"></a></td>
+            </tr>
+            <tr>
+              <td class="course-table-head"><span style="color:#497bc7">The Electronic and Computer Engineering Students’ Society</span></td>
+              <!-- <td> <a target="_blank"  href="https://www.facebook.com/ecesshkustsu/"><img src="img/facebook.png" alt="FB icon" width="30" height="30"></a> </td> -->
+              <td> <a target="_blank" href="https://instagram.com/hkustsu_ecess?igshid=MzRlODBiNWFlZA=="><img src="img/instagram.png" alt="IG icon" width="30" height="30"></a> </td>
+            </tr>
+            <tr class="info">
+              <td class="course-table-head"><span style="color:#497bc7">Industrial Engineering and Decision Analytics Students' Society</span></td>
+                <!-- <td></td> -->
+                <td> <a target="_blank" href="https://instagram.com/iedass_hkust/"><img src="img/instagram.png" alt="IG icon" width="30" height="30"></a> </td>
+            </tr>
+            <tr>
+              <td class="course-table-head"><span style="color:#497bc7;">Mechanical and Aerospace Engineering Students’ Association</span></td>
+              <!-- <td><a target="_blank" href="https://www.facebook.com/MechHkust/"><img src="img/facebook.png" alt="FB icon" width="30" height="30"></a></td> -->
+              <td><a target="_blank" href="https://instagram.com/maesa_hkust?igshid=MzRlODBiNWFlZA=="><img src="img/instagram.png" alt="IG icon" width="30" height="30"></a></td>
+            </tr>
+          </table>
+
+          <!-- HIDE
+          <br>
+          <h1> Orientation activities by Engineering and Departmental Student Societies </h1>
+          <br>
+          <div id="slide">
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <img src="img/poster/CSESS.png" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <img src="img/poster/EVMTSS.png" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <img src="img/poster/MECH.png" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <img src="img/poster/ECE.png" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <img src="img/poster/ESU.jpg" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <img src="img/poster/IEDA.jpg" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <img src="img/poster/ISDSS.png" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <img src="img/poster/CBESS.jpeg" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <img src="img/poster/CEESS.jpg" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <img src="img/poster/DDPOC.jpg" style="width:100%">
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+              <span class="dot" onclick="gotoSlide(0)"></span>
+              <span class="dot" onclick="gotoSlide(1)"></span>
+              <span class="dot" onclick="gotoSlide(2)"></span>
+              <span class="dot" onclick="gotoSlide(3)"></span>
+              <span class="dot" onclick="gotoSlide(4)"></span>
+              <span class="dot" onclick="gotoSlide(5)"></span>
+              <span class="dot" onclick="gotoSlide(6)"></span>
+              <span class="dot" onclick="gotoSlide(7)"></span>
+              <span class="dot" onclick="gotoSlide(8)"></span>
+              <span class="dot" onclick="gotoSlide(9)"></span>
+            </div>
+          -->
+          </div>
+      </div>
+
+        <!--<div class="row hidden" style="padding: 10px;" id="step-7">
+      <h1>O'Camp</h1>
+      <p>If you want to prepare and know more about the university life, O'Camp is an opportunity for you to further explore it! You can make friends with your future study companions and adapt to your life in the coming years in an exciting way!</p>
+      <hr>
+      <a name="step-7-box-top" id="step-7-box-top-id"></a>
+      <div style="display: inline-block; width:100%;">
+      <div class="col-xs-12 col-sm-5" style="padding:0px 20px 0px 0px; padding-bottom: 300px" id="step-7-small-box">
+      <ul class="nav nav-pills nav-stacked">
+      <h4 style="font-weight:700">School Society <span style="display:inline-block; word-break:keep-all; font-size:14px;">(10-12 Aug 2019)</span></h4>
+      <li role="presentation" class="step-7-left-btn" id="step-7-0-btn" title="esu"><a onclick="javascript: step7LeftBtn('0');" role="button">The Engineering Students' Union, HKUSTSU</a></li>
+      <h4 style="font-weight:700">Departmental Societies <span style="display:inline-block; word-break:keep-all; font-size:14px;">(14-16 Aug 2019)</span></h4>
+      <!--<li role="presentation" class="step-7-left-btn" id="step-7-1-btn" title="cpegss"><a onclick="javascript: step7LeftBtn('1');" role="button">Computer Engineering Students’ Society, HKUSTSU</a></li>
+     <li role="presentation" class="step-7-left-btn" id="step-7-2-btn" title="iedass"><a onclick="javascript: step7LeftBtn('2');" role="button">Industrial Engineering and Decision Analytics Students' Society, HKUSTSU</a></li>
+     <li role="presentation" class="step-7-left-btn" id="step-7-3-btn" title="maesa"><a onclick="javascript: step7LeftBtn('3');" role="button">Mechanical and Aerospace Engineering Students' Association, HKUSTSU</a></li>-->
+     <!--<li role="presentation" class="step-7-left-btn" id="step-7-4-btn" title="cbess"><a onclick="javascript: step7LeftBtn('4');" role="button">The Chemical and Biological Engineering Students’ Society, HKUSTSU</a></li>
+     <li role="presentation" class="step-7-left-btn" id="step-7-5-btn" title="ceess"><a onclick="javascript: step7LeftBtn('5');" role="button">The Civil and Environmental Engineering Students’ Society, HKUSTSU</a></li>
+     <li role="presentation" class="step-7-left-btn" id="step-7-6-btn" title="csess"><a onclick="javascript: step7LeftBtn('6');" role="button">The Computer Science and Engineering Students' Society, HKUSTSU</a></li>
+     <!--<li role="presentation" class="step-7-left-btn" id="step-7-7-btn" title="ecess"><a onclick="javascript: step7LeftBtn('7');" role="button">Electronic and Computer Engineering Students' Society, HKUSTSU</a></li>-->
+     <!--</ul>
+     </div>
+     <div class="hidden-xs col-sm-7" id="step-7-preview" style="padding:0px;">
+     <img src="img/ocamp/preiview_ocamp_poster.jpg" width="100%"/>
+     </div>
+     <div class="col-sm-7 hidden" id="step-7-view" style="padding:0px;">
+     <span class="visible-xs-inline-block" style="padding-bottom:5px"><a class="btn" onclick="javascript: step7Back();" role="button">&laquo; Back</a></span>
+     <ul class="nav nav-tabs">
+     <li role="presentation" class="active" id="step-7-cover-btn"><a onclick="javascript: step7RightBtn('0');" role="button">Cover</a></li>
+     <li role="presentation" id="step-7-video-btn"><a onclick="javascript: step7RightBtn('1');" role="button">Video</a></li>
+     <li role="presentation" id="step-7-detail-btn"><a onclick="javascript: step7RightBtn('2');" role="button">Details</a></li>
+     </ul>
+     <div id="step-7-cover" style="text-align:right;">
+     <img src="" width="100%" id="step-7-cover-img">
+     </div>
+     <div id="step-7-video" class="hidden">
+     <video width="100%" src="" id="step-7-video-video" controls>
+     video not supported
+     </video>
+     </div>
+     <div id="step-7-detail" class="hidden" style="padding:10px;">
+     <p class="step-7-detail-text hidden" id="step-7-detail-0">Official Website:<br><a href="https://esu.su.ust.hk/1920JUPAS.html" target="_blank">ESU Official Website</a></p>
+     <p class="step-7-detail-text hidden" id="step-7-detail-1">Official Website:<br><a href="https://cpueg.su.ust.hk/index.html" target="_blank">CPEGSS Official Website</a></p>
+     <p class="step-7-detail-text hidden" id="step-7-detail-2">Official Website:<br><a href="https://iess.su.ust.hk/" target="_blank">IEDASS Official Website</a></p>
+     <p class="step-7-detail-text hidden" id="step-7-detail-3">Official Website:<br><a href="https://mechisano.wixsite.com/mesa/ex-cos" target="_blank">MESA Official Website</a></p>
+     <p class="step-7-detail-text hidden" id="step-7-detail-4">Official Website:<br><a href="https://www.facebook.com/CBMESS/" target="_blank">CBESS Official Website</a></p>
+     <p class="step-7-detail-text hidden" id="step-7-detail-5">Official Website:<br><a href="https://ceesshkustsu.wixsite.com/ceess-hkustsu" target="_blank">CEESS Official Website</a></p>
+     <p class="step-7-detail-text hidden" id="step-7-detail-6">Official Website:<br><a href="https://csess.su.ust.hk/" target="_blank">CSESS Official Website</a></p>
+     <p class="step-7-detail-text hidden" id="step-7-detail-7">Official Website:<br><a href="https://ecesshkust2019.wixsite.com/ecess" target="_blank">ECESS Official Website</a></p>
+     </div>
+     </div>
+     </div>
+     <hr>
+     <p>There are also other orientation camps and activities organized by different house students’ associations, art and cultural clubs, sports clubs, and independent club.</p> 
+     <p>Click <a href="https://fys.ust.hk/ocamps/student-led-ocamps" target="_blank" class="important-link">here</a> to explore more!</p>
+     </div>
+     -->
+
+
+
+
+
+      <div class="row hidden" style="padding: 10px; text-align:center" id="step-11">
+        <h1>Congratulations!<br>You have completed the <span style="display:inline-block">Online&nbsp;Registration</span> & <span style="display:inline-block">Pre-enrollment&nbsp;Process</span>!</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <a href="faq.html"><img class="img" src="img/faq_index_icon.jpg" alt="faq-icon" style="width:100px; height:100px; margin:23px"></a>
+              <h2>FAQ</h2>
+              <p style="text-align: center;">We have prepared some frequently asked questions.</p>
+              <br />
+              <p style="text-align: center;"><a class="btn btn-default" href="faq.html" role="button" style="text-decoration:none !important;">FAQ &raquo;</a></p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a href="https://www.instagram.com/hkust.e2i/"><img class="img" src="img/youtube.jpeg" alt="ins-icon" style="width: 130px;height:100px; margin:23px"></a>
+              <h2>Follow Us on YouTube</h2>
+              <p style="text-align: center;">E&#178I Official YouTube channel</p><br />
+              <p style="text-align: center;"><br><a class="btn btn-default" href="https://www.youtube.com/channel/UCE3yctXQiWkUBxNNtwioV-w" role="button" style="text-decoration:none !important;">Follow Our YouTube channel &raquo;</a>
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a href="https://www.instagram.com/hkust.e2i/"><img class="img" src="img/instagram.png" alt="ins-icon" style="width: 100px;height:100px; margin:23px"></a>
+              <h2>Follow Us on Instagram</h2>
+              <p style="text-align: center;">E&#178I Official Instagram Account</p><br />
+              <p style="text-align: center;"><br><a class="btn btn-default" href="https://www.instagram.com/hkust.e2i/" role="button" style="text-decoration:none !important;">Follow Our IG &raquo;</a></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4" style="float: none; margin: 0 auto;">
+              <a href="file/guidebook_2024-25.pdf" target="_blank"><img class="img" src="img/booklet.png" alt="booklet-icon" style="height: 90px; margin:28px"></a>
+              <h2>First Year Guidebook</h2>
+              <p>Navigate your university life with a comprehensive guidebook.</p><br />
+              <p><a class="btn btn-default" href="file/guidebook_2024-25.pdf" role="button" target="_blank">First Year Guide Book &raquo;</a></p>
+            </div>
+          </div>
+          <br>
+          <p class="bg-info" style="padding:10px; border-radius: 5px; text-align: center;">Don’t forget your hall application and other important activities listed in the 
+            <a href="https://fys.ust.hk/" style="text-decoration:underline;">New Student Orientation</a>!<br> 
+            See you on <span style="display:inline-block; color: red">28 August 2024</span> at the School Welcome and Orientation!</p>
+        </div>
+      </div>
+
+      <div class="container" style="padding-top: 8vh">
+        <div class="row hidden" id="step-0-nav">
+          <div class="col-xs-12" align="right">
+            <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '0', '1');"
+                                           role="button">Next
+                                           &raquo;</a></p>
+          </div>
+        </div>
+        <div class="row hidden" id="step-1-nav">
+          <div class="col-xs-6">
+            <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '1', '0');"
+                                           role="button">&laquo; Back</a></p>
+          </div>
+          <div class="col-xs-6" align="right">
+            <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '1', '2');"
+                                           role="button">Next
+                                           &raquo;</a></p>
+          </div>
+        </div>
+        <!--
+      <div class="row hidden" id="step-1-1-nav">
+      <div class="col-xs-6">
+      <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '1-1', '1');"
+      role="button">&laquo; Back</a></p>
+      </div>
+      <div class="col-xs-6" align="right">
+      <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '1-1', '2');"
+      role="button">Next
+      &raquo;</a></p>
+      </div>
+      </div>
+        -->
+        <div class="row hidden" id="step-2-nav">
+          <div class="col-xs-6">
+            <p><a class="btn btn-primary btn-lg"
+            onclick="javascript: stepMove(event, '2', '1');step2Pause(event);" role="button">&laquo;
+            Back</a></p>
+          </div>
+          <div class="col-xs-6" align="right">
+            <p><a class="btn btn-primary btn-lg"
+            onclick="javascript: stepMove(event, '2', '3');step2Pause(event);" role="button">Next
+            &raquo;</a></p>
+          </div>
+        </div>
+        <div class="row hidden" id="step-3-nav">
+          <div class="col-xs-6">
+            <p><a class="btn btn-primary btn-lg"
+            onclick="javascript: stepMove(event, '3', '2');step3Pause(event);" role="button">&laquo;
+            Back</a></p>
+          </div>
+          <div class="col-xs-6" align="right">
+            <p><a class="btn btn-primary btn-lg disabled2"
+            onclick="javascript: stepMove(event, '3', '4');step3Pause(event);" role="button"
+                                                                         id="step-3-nav-right">Next &raquo;</a></p>
+          </div>
+        </div>
+        <div class="row hidden" id="step-4-nav">
+          <div class="col-xs-6">
+            <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '4', '3');"
+                                           role="button">&laquo; Back</a></p>
+          </div>
+          <div class="col-xs-6" align="right">
+            <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '4', '5');"
+                                           role="button">Next
+                                           &raquo;</a></p>
+          </div>
+        </div>
+        <div class="row hidden" id="step-5-nav">
+          <div class="col-xs-6">
+            <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '5', '4');"
+                                           role="button">&laquo; Back</a></p>
+          </div>
+          <div class="col-xs-6" align="right">
+            <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '5', '6');"
+                                           role="button">Next
+                                           &raquo;</a></p>
+          </div>
+        </div>
+        <div class="row hidden" id="step-6-nav">
+          <div class="col-xs-6">
+            <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '6', '5');"
+                                           role="button">&laquo; Back</a></p>
+          </div>
+          <div class="col-xs-6" align="right">
+            <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '6', '7');"
+                                           role="button">Next
+                                           &raquo;</a></p>
+          </div>
+        </div>
+        <div class="row hidden" id="step-7-nav">
+          <div class="col-xs-6">
+            <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '7', '6');"
+                                           role="button">&laquo; Back</a></p>
+          </div>
+          <div class="col-xs-6" align="right">
+            <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '7', '8');"
+                                           role="button">Next
+                                           &raquo;</a></p>
+          </div>
+        </div>
+        <div class="row hidden" id="step-8-nav">
+          <div class="col-xs-6">
+            <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '8', '7');"
+                                           role="button">&laquo; Back</a></p>
+          </div>
+          <div class="col-xs-6" align="right">
+            <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '8', '9');"
+                                           role="button">Next
+                                           &raquo;</a></p>
+          </div>
+        </div>
+        <div class="row hidden" id="step-9-nav">
+          <div class="col-xs-6">
+            <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '9', '8');"
+                                           role="button">&laquo; Back</a></p>
+          </div>
+          <div class="col-xs-6" align="right">
+            <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '9', '10');"
+                                           role="button">Next &raquo;</a></p>
+          </div>
+        </div>
+        <div class="row hidden" id="step-10-nav">
+          <div class="col-xs-6">
+            <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '10', '9');"
+                                           role="button">&laquo; Back</a></p>
+          </div>
+          <div class="col-xs-6" align="right">
+            <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '10', '11');"
+                                           role="button">Next &raquo;</a></p>
+          </div>
+        </div>
+        <div class="row hidden" id="step-11-nav">
+          <div class="col-xs-6">
+            <p><a class="btn btn-primary btn-lg" onclick="javascript: stepMove(event, '11', '10');"
+                                           role="button">&laquo; Back</a></p>
+          </div>
+          <div class="col-xs-6" align="right">
+            <p><a class="btn btn-primary btn-lg" href="index.html" target="_self" role="button"
+                                                                            style="white-space: normal;">Back
+                                                                            to Homepage</a></p>
+          </div>
+        </div>
+        <div class="row" style="height: 5vh">
+        </div>
+      </div>
+    </div>
+    <!-- <div class="hidden">
+    <a href="http://www.reliablecounter.com" target="_blank"><img
+    src="http://www.reliablecounter.com/count.php?page=sengreg.ust.hk/activate.html&digit=style/plain/10/&reloads=0"
+    alt="" title="" border="0"></a><br /><a href="http://www.fabbly.com" target="_blank"
+    style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;">activate.html</a>
+    </div> -->
+    <footer id="myFooter">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-md-3" style="padding: 0px;">
+            <h5 class="visible-sm">School of Engineering</h5>
+            <h5 class="hidden-sm">School of Engineering</h5>
+            <ul class="footer-ul">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="activate.html">Pre-enrollment</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3" style="padding: 0px;">
+            <h5>Advising</h5>
+            <ul class="footer-ul">
+              <li>
+                <a class="before-event" href="advisingSession.html">Orientation Talk</a>
+                <a class="after-event hidden" href="advisingSession.html">Orientation Talk Recording</a>
+              </li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="houses.html">Peer Mentoring Program</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-2 col-md-3" style="padding: 0px;">
+            <h5>Information</h5>
+            <ul class="footer-ul">
+              <li><a href="file/guidebook_2024-25.pdf" target="_blank">First Year Guide</a></li>
+              <li><a href="explore.html">Explore the Curriculum</a></li>
+              <li><a href="important_date.html">Important Dates</a></li>
+              <li><a href="orientation.html">Orientation Activities</a></li>
+              <li><a href="links.html">Useful Links</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3" style="padding: 0px;">
+            <h5>Enquiry</h5>
+            <ul class="footer-ul hidden-xs">
+              <li><span style="display:inline-block; width:3.5em">Email: </span>
+                <span style="display:inline-block; width:10em">
+                  <a href="mailto:sengadvisor@ust.hk">sengadvisor@ust.hk</a></span>
+              </li>
+              <li><span style="display:inline-block; width:3.5em">Tel:</span>
+                <span style="display:inline-block; width:10em;word-break:keep-all">(852)&nbsp;2358&nbsp;5934</span>
+              </li>
+              <li><span style="display:inline-block; width:3.5em"></span>
+                <span style="display:inline-block; width:10em;word-break:keep-all">(852)&nbsp;2358&nbsp;5935</span>
+              </li>
+              <li><span style="display:inline-block; width:3.5em"></span>
+                <span style="display:inline-block; width:10em;word-break:keep-all">(852)&nbsp;2358&nbsp;8224</span>
+              </li>
+            </ul>
+            <ul class="footer-ul visible-xs">
+              <li><span style="display:inline-block; width:3.5em; text-align:right">Email:&nbsp;&nbsp;</span>
+                <span style="display:inline-block; width:10em; text-align:left;"><a href="mailto:sengadvisor@ust.hk">sengadvisor@ust.hk</a></span>
+              </li>
+              <li><span style="display:inline-block; width:3.5em; text-align:right">Tel:&nbsp;&nbsp;</span>
+                <span style="display:inline-block; width:10em;word-break:keep-all; text-align:left;">(852)&nbsp;2358&nbsp;5934</span>
+              </li>
+              <li><span style="display:inline-block; width:3.5em; text-align:right"></span>
+                <span style="display:inline-block; width:10em;word-break:keep-all; text-align:left;">(852)&nbsp;2358&nbsp;5935</span>
+              </li>
+              <li><span style="display:inline-block; width:3.5em; text-align:right"></span>
+                <span style="display:inline-block; width:10em;word-break:keep-all; text-align:left;">(852)&nbsp;2358&nbsp;8224</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="second-bar">
+        <div class="container">
+          <h6> Copyright &copy; 2024 School of Engineering, HKUST All Rights Reserved</h6>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery \(Bootstrap 所有外掛均需要使用\) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/js_activate.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script type="text/javascript">
+      // make sure javascript is enabled
+      $("#step-null").addClass("hidden");
+      $("#step-0").fadeIn("slow", "linear").removeClass("hidden");
+      $("#step-0-nav").fadeIn("slow", "linear").removeClass("hidden");
+      $("#progress1").fadeIn("slow", "linear").removeClass("hidden");
+      showSlides();
+      // update dates
+      if (Date.now() - Date.parse("Aug 11 2024 00:00:00 GMT+0800") > 0) {
+        $(".before-event").addClass("hidden");
+        $(".after-event").removeClass("hidden");
+      }
+      else if (Date.now() - Date.parse("Aug 11 2024 00:00:00 GMT+0800") > 0) {
+        $("#morning-times").addClass("hidden");
+        $("#afternoon-times").removeClass("hidden");
+      }
+      // show list
+      setTimeout(() => {
+        $(".faq-title-name").click();
+      }, 0);
+    </script>
+    <script type="text/javascript">
+      if (jQuery(".faq-toggle .faq-toggle-title").hasClass('active')) {
+        jQuery(".faq-toggle .faq-toggle-title.active").closest('.faq-toggle').find('.activate-toggle-inner').show();
+      }
+      jQuery(".faq-toggle .faq-toggle-title").click(function () {
+        if (jQuery(this).hasClass('active')) {
+          jQuery(this).removeClass("active").closest('.faq-toggle').find('.activate-toggle-inner').slideUp(200);
+        }
+        else {
+          jQuery(this).addClass("active").closest('.faq-toggle').find('.activate-toggle-inner').slideDown(200);
+        }
+      });
+
+      $(".faq-toggle .faq-toggle-title").hover(function () {
+        $('.faq-toggle-title').css("background-color", "#E6F4FF");
+      }, function () {
+        $('.faq-toggle-title').css("background-color", "#d9edf7");
+      });
+    </script>
+  </body>
+
+</html>
